@@ -2,11 +2,11 @@
 <h2 align="center">Project Plan</h2>
 
 ### Introduction
-Nesse documento você encontrará, informações sobre a organização do projeto de forma geral. Funções de cada membro da equipe, medidas de produtividade e evolução, objetivos, produção
+Nesse documento você encontrará, informações sobre a organização do projeto de forma geral. Funções de cada membro da equipe, medidas de produtividade e evolução, objetivos, produção.
 
 
 ### Project organization
-O projeto será realizado pelos desenvolvedores Pedro Augusto, Emanuel e Waliff. E será divido em 3 funções pricipais Documentação/Artefatos que serão desenvolvidos por todos os membros, Back-end que será desenvolvido pelo Pedro e o Waliff e o Front-end que será desenvolvido pelo emanuel. O projeto será disponibilizado e organizado pela plataforma github. A comunifcação oficial será feita por um grupo na plataforma WhatsApps
+O projeto será realizado pelos desenvolvedores Pedro Augusto, Emanuel e Waliff. E será divido em 3 funções principais: Documentação/Artefatos que serão desenvolvidos por todos os membros, Back-end que será desenvolvido pelo Pedro e o Waliff e o Front-end que será desenvolvido pelo Emanuel. O projeto será disponibilizado e organizado pela plataforma github. A comunicação oficial será feita por um grupo na plataforma whatsapp.
 
 | Team Member | Documentação/Artefatos | Back-end |  Front-end | 
 |-------------|------------------------|----------| ---------- | 
@@ -16,9 +16,9 @@ O projeto será realizado pelos desenvolvedores Pedro Augusto, Emanuel e Waliff.
 
 
 ### Development process and measurements
-A métodologia utilizada será o Scrum, com algumas adaptações para o período de pandemia. O daily meeting será realizado a cada 2 dias por meio da plataforma WhatsApps; O Sprint planning será realizado em todas segunda-feira da sprint, já o sprint review será realizado no domingo, ambas cerimonias serão realizadas na plataforma discord, no canal do Projeto. 
+A métodologia utilizada será o Scrum, com algumas adaptações para o período de pandemia. O Daily Meeting será realizado a cada 2 dias por meio da plataforma whatsapp; O Sprint Planning será realizado em todas as segundas-feiras para iniciar a sprint. A Sprint Review será realizada no domingo, ambas cerimônias serão realizadas através da plataforma discord, em um canal criado exclusivamente para o Projeto.
 
-As issues serão dividas em nível de dificuldade por meio de números da serie de fibonnaci, e a soma desses pontos será o esforço necessário(target velocity) daquela sprint.
+As issues serão dividas em nível de dificuldade por meio de números da serie de fibonnaci, e a soma desses pontos, será o esforço necessário(target velocity) daquela sprint.
 
 ### Project milestones and objectives
 
@@ -30,9 +30,9 @@ As issues serão dividas em nível de dificuldade por meio de números da serie 
 | Implementação                  | Sprint 4  | 17. Implementação do back-end<br> 18. Implementação do front-end<br>                                                                                                 | 09/11/2020 - 15/11/2020      | 16              |
 
 ### Deployment
-Todo final de interação o site em produção será atualizado no heroku por meio do github actions, quando a pull request realizada for aprovado e mergida com a master. E a documentação será disponibilizada por meio do repositório no github.
+Ao final de iteração o site em produção será atualizado no heroku por meio do github actions, quando a pull request realizada for aprovada e mergida com a master. A documentação será disponibilizada por meio do repositório no github em formato markdown.
 
 ### Lessons learned
-- Planejamento incial das sprints é importante.
+- Planejamento inicial das sprints é importante.
 - Ao criar as tarefas é importante mensurar a sua dificuldade em grupo.
-- É fundamental aplicar reuniões recorrenetes para o bom alinhamento do projeto e progresso.
+- É fundamental aplicar reuniões recorrentes para o bom alinhamento do projeto e progresso.
