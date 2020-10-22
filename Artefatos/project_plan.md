@@ -2,11 +2,11 @@
 <h2 align="center">Project Plan</h2>
 
 ### Introduction
-Nesse documento você encontrará, informações sobre a organização do projeto de forma geral. Funções de cada membro da equipe, medidas de produtividade e evolução, objetivos, produção.
+Nesste documento você encontrará informações sobre a organização do projeto de forma geral.é próxima , encontrará tamfunções de cada membro da equipe, medidas de produtividade e evolução, objetivos e produção.
 
 
 ### Project organization
-O projeto será realizado pelos desenvolvedores Pedro Augusto, Emanuel e Waliff. E será divido em 3 funções principais: Documentação/Artefatos que serão desenvolvidos por todos os membros, Back-end que será desenvolvido pelo Pedro e o Waliff e o Front-end que será desenvolvido pelo Emanuel. O projeto será disponibilizado e organizado pela plataforma github. A comunicação oficial será feita por um grupo na plataforma whatsapp.
+O projeto será realizado pelos desenvolvedores Pedro Augusto, Emanuel e Waliff. Será divido em três partes: Documentação/Artefatos que serão desenvolvidos por todos os membros, Back-end que será desenvolvido pelo Pedro e o Waliff e o Front-end que será desenvolvido pelo Emanuel. O projeto será disponibilizado,versionado e organizado pela plataforma github. A comunicação principal será feita por um grupo na plataforma whatsapp.
 
 | Team Member | Documentação/Artefatos | Back-end |  Front-end | 
 |-------------|------------------------|----------| ---------- | 
@@ -16,9 +16,9 @@ O projeto será realizado pelos desenvolvedores Pedro Augusto, Emanuel e Waliff.
 
 
 ### Development process and measurements
-A métodologia utilizada será o Scrum, com algumas adaptações para o período de pandemia. O Daily Meeting será realizado a cada 2 dias por meio da plataforma whatsapp; O Sprint Planning será realizado em todas as segundas-feiras para iniciar a sprint. A Sprint Review será realizada no domingo, ambas cerimônias serão realizadas através da plataforma discord, em um canal criado exclusivamente para o Projeto.
+A métodologia utilizada será a Scrum com algumas adaptações para o período de pandemia. O Daily Meeting será realizado a cada 2 dias por meio da plataforma whatsapp; O Sprint Planning será realizado em todas as segundas-feiras para iniciar a sprint; A Sprint Review será realizada no domingo e todos encontros virtuaisi serão realizados através da plataforma discord, em um canal criado exclusivamente para o Projeto.
 
-As issues serão dividas em nível de dificuldade por meio de números da serie de fibonnaci, e a soma desses pontos, será o esforço necessário(target velocity) daquela sprint.
+As issues serão classificadas por nível de dificuldade por meio de números da sequênia de fibonnaci, a soma desses pontos será o esforço necessário (target velocity) daquela sprint.
 
 ### Project milestones and objectives
 
@@ -30,8 +30,8 @@ As issues serão dividas em nível de dificuldade por meio de números da serie 
 | Implementação                  | Sprint 4  | 17. Implementação do back-end<br> 18. Implementação do front-end<br>                                                                                                 | 09/11/2020 - 15/11/2020      | 16              |
 
 ### Deployment
-Ao final da iteração, o site em produção será atualizado no heroku por meio do github actions, quando a pull request realizada for aprovada e mergida com a master. Para a PR ser aprovada, ela necessariamente tem que ser revisada pelo outros dois membros da equipe que não fizeram a issue. 
-E a documentação será disponibilizada por meio do repositório no github em formato markdown.
+Ao final da iteração, o site em produção será atualizado no heroku por meio do github actions quando a pull request realizada for aprovada e mergida com a master. Para a PR ser aprovada, ela necessariamente tem que ser revisada pelo outros dois membros da equipe que não fizeram a issue, garantindo uma maior qualidade nas entregas. 
+A documentação será disponibilizada por meio do repositório no github em formato markdown.
 
 ### Lessons learned
 - Planejamento inicial das sprints é importante.
