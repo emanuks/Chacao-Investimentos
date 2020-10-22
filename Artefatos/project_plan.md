@@ -2,7 +2,7 @@
 <h2 align="center">Project Plan</h2>
 
 ### Introduction
-Nesste documento você encontrará informações sobre a organização do projeto de forma geral.é próxima , encontrará tamfunções de cada membro da equipe, medidas de produtividade e evolução, objetivos e produção.
+Neste documento você encontrará informações sobre a organização do projeto de forma geral. Encontrará também as funções de cada membro da equipe, medidas de produtividade e evolução, objetivos e produção.
 
 
 ### Project organization
