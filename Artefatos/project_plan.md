@@ -24,9 +24,9 @@ As issues serão dividas em nível de dificuldade por meio de números da serie 
 
 | Phase                          | Iteration | Primary objectives (risks and use case scenarios)                                                                                                                    | Scheduled start or milestone | Target velocity |
 |--------------------------------|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------|-----------------|
-| Projeto e Documentação Inicial | Sprint 1  | 1. Project Definined Process <br> 2. Project Plan<br> 3. Interaction Plan<br> 4. Tools<br> 5. Glossary<br> 6. Visions<br>                                            | 19/10/2020 - 25/10/2020      | 16              |
-| Projeto e Documentação Inicial | Sprint 2  | 7. System-wide requirements<br> 8. Use-case model<br> 9. Use case<br> 10. Architecture notebook<br> 11. Infrasctructure<br> 12. Projeto físico de banco de dados<br> | 26/10/2020 - 01/11/2020      | 16              |
-| Prototipação e Smoke Test      | Sprint 3  | 13. Projeto de interface de usuário<br> 14. Protótipo de interface com o usuário<br> 15. Protótipo de banco de dados<br> 16. Smoke Test<br>                          | 02/11/2020 - 08/11/2020      | 16              |
+| Projeto e Documentação Inicial | Sprint 1  | 1. Project Definined Process <br> 2. Project Plan<br> 3. Interaction Plan<br> 4. Tools<br> 5. Glossary<br> 6. Visions<br>                                            | 19/10/2020 - 25/10/2020      | 9              |
+| Projeto e Documentação Inicial | Sprint 2  | 7. System-wide requirements<br> 8. Use-case model<br> 9. Use case<br> 10. Architecture notebook<br> 11. Infrasctructure<br> 12. Projeto físico de banco de dados<br> | 26/10/2020 - 01/11/2020      | 14              |
+| Prototipação e Smoke Test      | Sprint 3  | 13. Projeto de interface de usuário<br> 14. Protótipo de interface com o usuário<br> 15. Protótipo de banco de dados<br> 16. Smoke Test<br>                          | 02/11/2020 - 08/11/2020      | 13              |
 | Implementação                  | Sprint 4  | 17. Implementação do back-end<br> 18. Implementação do front-end<br>                                                                                                 | 09/11/2020 - 15/11/2020      | 16              |
 
 ### Deployment
