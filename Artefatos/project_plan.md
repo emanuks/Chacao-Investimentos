@@ -30,7 +30,8 @@ As issues serão dividas em nível de dificuldade por meio de números da serie 
 | Implementação                  | Sprint 4  | 17. Implementação do back-end<br> 18. Implementação do front-end<br>                                                                                                 | 09/11/2020 - 15/11/2020      | 16              |
 
 ### Deployment
-Ao final da iteração, o site em produção será atualizado no heroku por meio do github actions, quando a pull request realizada for aprovada e mergida com a master. A documentação será disponibilizada por meio do repositório no github em formato markdown.
+Ao final da iteração, o site em produção será atualizado no heroku por meio do github actions, quando a pull request realizada for aprovada e mergida com a master. Para a PR ser aprovada, ela necessariamente tem que ser revisada pelo outros dois membros da equipe que não fizeram a issue. 
+E a documentação será disponibilizada por meio do repositório no github em formato markdown.
 
 ### Lessons learned
 - Planejamento inicial das sprints é importante.
