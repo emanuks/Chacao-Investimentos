@@ -3,14 +3,14 @@
 
 ____
 #### Introduction
-Neste documento você encontrará informações sobre a organização do projeto com foco nas iterações. O projeto está sendo desenvolvido seguindo a metodologia ágil Scrum. O projeto está sendo versionado através do GitHub e utilizados as facilidades de gerência providas por ele para criarmos as Sprints e Milestones.
+Neste documento você encontrará informações sobre a organização do projeto com foco nas iterações. O projeto está sendo desenvolvido seguindo a metodologia ágil Scrum. O projeto está sendo versionado através do GitHub e utilizados as facilidades de gerência providas por ele para, por exemplo, organizarmos a Sprint em Milestones.
 
 ____
 #### 1.  Key milestones
 A Start Date da Sprint é o Sprint Planing, feito com uma revisão do Backlog Project, fazendo alguma atualização caso necessário.
 A Meeting é nossa reunião após dois dias passados do início da Sprint para avaliarmos o andamento.
 A End Date da Sprint é o Sprint Review, feito em reunião com os membros para analisar o desenvolvimento da Sprint e possíveis melhorias para as próximas.
-Fora essas datas temos o Daily Scrum que é feito via WhatsApp para uma rápida atualização do trabalho do time no dia em questão.
+O motivo de adaptarmos o Daily Scrum para o formato da Meeting dois dias após o início da Sprint é devido à pandemia, pelo formato ideal para os desenvolvedores iremos nos comunicar via WhatsApp quando acontecer algum imprevisto e teremos essa reunião oficial com data marcada para fazer o checkpoint da Sprint.
 
 | Milestone   | Sprint Planing | Meeting    | Sprint Review |
 |-------------|----------------| -----------| --------------|
@@ -76,7 +76,7 @@ ____
 ____
 #### 5.  Evaluation criteria
 - Todos os membros revisarem e aprovarem a issue.
-- Passar em 95% dos testes em nível de sistema.
+- Passar em 100% dos testes em nível de sistema.
 - Resposta favorável pela avaliação do professor da disciplina.
 - Concluir o planejamento das iterações sem maiores problemas.
 
@@ -91,7 +91,7 @@ ____
 
 - Assessment against objectives
 O projeto seguiu conforme o planejado no plano de iterações. Ao fazer a reunião inicial conseguimos definir bem o que deveria ser feito em cada etapa. Com o sistema de revisões e os prazos a serem seguidos não tivemos maiores problemas.
-A parte da implementação contou com pouco tempo mas já era previsto no planejamento pois não consistia no foco do projeto desenvolvido, apesar disso o resultado foi satisfatorio.
+A parte da implementação contou com pouco tempo mas já era previsto no planejamento pois não consistia no foco do projeto desenvolvido, apesar disso o resultado foi satisfatório.
 
 - Work Items: Planned compared to actually completed
 Todas as issues planejadas foram desenvolvidas, a implementação poderia ter sido melhor realizada mas estava previsto no planejamento de acordo com a deadline.
