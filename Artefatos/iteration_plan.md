@@ -2,11 +2,11 @@
 <h2 align="center">Iteration Plan</h2>
 
 ____
-##### Introduction
+#### Introduction
 Neste documento você encontrará informações sobre a organização do projeto com foco nas iterações. O projeto está sendo desenvolvido seguindo a metodologia ágil Scrum. O projeto está sendo versionado através do GitHub e utilizados as facilidades de gerência providas por ele para criarmos as Sprints e Milestones.
 
 ____
-##### 1.  Key milestones
+#### 1.  Key milestones
 A Start Date da Sprint é o Sprint Planing, feito com uma revisão do Backlog Project, fazendo alguma atualização caso necessário.
 A Meeting é nossa reunião após dois dias passados do início da Sprint para avaliarmos o andamento.
 A End Date da Sprint é o Sprint Review, feito em reunião com os membros para analisar o desenvolvimento da Sprint e possíveis melhorias para as próximas.
@@ -21,7 +21,7 @@ Fora essas datas temos o Daily Scrum que é feito via WhatsApp para uma rápida 
 
 
 ____
-##### 2.  High-level objectives
+#### 2.  High-level objectives
 - Desenvolver artefatos 
 - Desenvolver protótipos
 - Desenvolver testes
@@ -29,7 +29,7 @@ ____
 - Revisar o trabalho desenvolvido na Sprint
 
 ____
-##### 3.  Work Item assignments
+#### 3.  Work Item assignments
 
 | Name or key words of description | Size estimate (points) | Target iteration | Assigned to |
 |:--------------------------------:|:----------------------:|:----------------:|:-----------:|
@@ -72,7 +72,7 @@ ____
 | Implementação | To Do | |
 
 ____
-##### 5.  Evaluation criteria
+#### 5.  Evaluation criteria
 - Todos os membros revisarem e aprovarem a issue.
 - Passar em 95% dos testes em nível de sistema.
 - Resposta favorável pela avaliação do professor da disciplina.
@@ -99,7 +99,7 @@ O sistema de revisão por parte de todos os membros do grupo foi muito bem suced
 Os testes realizados estiveram dentro da porcentagem ótima de acertos.
 O planejamento pôde ser concluído conforme o plano de iterações.
 ____
-##### 7. To Do List
+#### 7. To Do List
 Organizamos nossa Iteration Plan através de um Project no GitHub. Lá fazemos a atualização das issues, as reviews de cada atividade (os dois outros desenvolvedores devem avaliar o trabalho desenvolvido pelo terceiro desenvolvedor para garantir maior qualidade) e acompanhando de forma geral o andamento do projeto.
 
-![lista de ussues do GitHub](issues_list.png)
+![lista de ussues do GitHub](.issues_list.png)
