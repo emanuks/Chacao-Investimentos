@@ -102,4 +102,4 @@ ____
 #### 7. To Do List
 Organizamos nossa Iteration Plan através de um Project no GitHub. Lá fazemos a atualização das issues, as reviews de cada atividade (os dois outros desenvolvedores devem avaliar o trabalho desenvolvido pelo terceiro desenvolvedor para garantir maior qualidade) e acompanhando de forma geral o andamento do projeto.
 
-![lista de ussues do GitHub](.issues_list.png)
+![lista de ussues do GitHub](issues_list.png)
