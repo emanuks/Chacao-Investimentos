@@ -34,6 +34,7 @@ ____
 | Name or key words of description | Size estimate (points) | Target iteration | Assigned to |
 |:--------------------------------:|:----------------------:|:----------------:|:-----------:|
 | Planos das iterações (iteraction plan) | 1 | 1 | Waliff |
+| Plano do projeto (project plan) | 1 | 1 | Pedro |
 | Descrição do processo a ser seguido no projeto que resultará nos artefatos (project defined process) | 2 | 1 | Waliff |
 | Lista de ferramentas (tools) | 1 | 1 | Emanuel |
 | Glossário (glossary) | 1 | 1 | Emanuel |
@@ -55,6 +56,7 @@ ____
 | Name or key words of description | Status | Note |
 |:--------------------------------:|:------:|:----:|
 | Planos das iterações (iteraction plan) | Done |  |
+| Plano do projeto (project plan) | Done | |
 | Descrição do processo a ser seguido no projeto que resultará nos artefatos (project defined process) | Done | |
 | Lista de ferramentas (tools) | Done | |
 | Glossário (glossary) | Done | |
