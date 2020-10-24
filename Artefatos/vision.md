@@ -31,9 +31,9 @@ Neste documento você encontrará informações sobre a visão do produto a ser 
 
 | Name                 | Description | Responsibilities |
 |----------------------|----------------------------|------------------|
-| Dreams Bank          | Banco internacional que financia startups pelo mundo       |  - Financiar a equipe de software - Manter os custos de hospedagem e manuntenção  |
+| Dreams Bank          | Banco internacional que financia startups pelo mundo       |  - Financiar a equipe de software<br> - Manter os custos de hospedagem e manuntenção  |
 | Switch Marketing          | Empresa referência em marketing digital      |  - Marketing  |
-| SD Consultoria          | Empresa que lida com consultoria e recomendação de títulos públicos     |  - Montar carteira de investimentos - Selecionar os títulos públicos para plataforma   |
+| SD Consultoria          | Empresa que lida com consultoria e recomendação de títulos públicos     |  - Montar carteira de investimentos<br> - Selecionar os títulos públicos para plataforma   |
 ### 3.2 User Environment
 
 Para finalizar o MVP serão necessários 3 desenvolvedores, esses mesmos serão responsáveis pela manunteção da plataforma, e para futuras features ou atualizações serão contratados novos desenvolvedores de acordo com a necessidade. Serão investidas 4 semanas para o desenvolvimento da plataforma e depois disso será iniciada a campanha de marketing, que será realizada pela SwitchMakerting, focando em marketing digital nas redes sociais com o público indicado anteriormente.
@@ -45,10 +45,10 @@ O catálogo de investimento já foi montado pela SD Consultoria e não há prete
 
 | Need                           | Priority | Features                                                                                 | Planned Realease       |
 |--------------------------------|----------|------------------------------------------------------------------------------------------| -----------------------|
-| Sistema de Usuário             | 10       | - Login - Logout - Criação de contas - Perfil - Cancelamento de contas                   | 30 de Novembro de 2020 |
-| Gerenciamento de Investimentos | 9        | - Listagem de investimentos - Aplicação de investimentos - Cancelamento de investimentos | 30 de Novembro de 2020 |
-| Conexão com conta corrente     | 8        | - Cadastrar conta                                                                        | 30 de Novembro de 2020 |
-| Integração com o pix           | 5        | - Transferência via PIX                                                                  | 30 de Novembro de 2020 |
+| Sistema de Usuário             | 10       | - Login<br> - Logout <br> - Criação de contas <br>- Perfil<br> - Cancelamento de contas<br>  | 30 de Novembro de 2020 |
+| Gerenciamento de Investimentos | 9        | - Listagem de investimentos <br>- Aplicação de investimentos<br> - Cancelamento de investimentos<br> | 30 de Novembro de 2020 |
+| Conexão com conta corrente     | 8        | - Cadastrar conta<br>                                                                        | 30 de Novembro de 2020 |
+| Integração com o pix           | 5        | - Transferência via PIX<br>                                                                  | 30 de Novembro de 2020 |
 
 ## 5 Other Product Requirements
 
