@@ -3,7 +3,7 @@
 
 ## 1 .Introduction
 
-Neste documento você encontrará informações sobre a visão do produto a ser produzido, com foco no posicionamento de mercado, stakeholder, modelo de negócio, detalhes de produto.
+Neste documento você encontrará informações sobre a visão do produto a ser produzido, com foco no posicionamento de mercado, stakeholder, modelo de negócio e detalhes de produto.
 
 ## 2. Positioning 
 
@@ -12,8 +12,8 @@ Neste documento você encontrará informações sobre a visão do produto a ser 
 |-|-|
 | O problema                     | da falta de plataformas fáceis e intuitivas de investimentos|
 | Afeta                          | na baixa taxa de investimentos dos brasileiros  |
-| No qual impacta                | a demora do brasil para recuperar de crises |
-| a successful solution would be | uma aplicação de fácil acesso que disponibiliza títulos e fundos públicos por um preço acessível e uma baixa taxa de corretagem |
+| No qual impacta                | com crises financeiras mais fortes |
+| uma boa solução para esse problema seria | uma aplicação de fácil acesso, que disponibiliza títulos e fundos públicos por um preço acessível e uma baixa taxa de corretagem |
 
 ### 2.2 Product Position Statement
 |||
@@ -22,7 +22,7 @@ Neste documento você encontrará informações sobre a visão do produto a ser 
 | Nos quais                      | gostariam de fazer seu patrimonio crescer ou conseguir uma indepêndencia financeira com baixo riscos |
 | A (Chacão Investimento)        | é uma corretora de investimentos |
 | Que                            | proporciona a melhor oportunidade para você se consquistar suas metas financeiras|
-| Ao contrário                   | das concorrentes que só enfocam nos clientes com mais renda e com taxa de 1% sobre o valor investido |
+| Ao contrário                   | das concorrentes que só enfocam nos clientes com mais renda e com altas taxas de 1% sobre o valor investido |
 | Nosso produto                  | não diferencia clientes pela renda e possuem uma taxa de corretagem com 5% dos lucro |
 
 
@@ -35,16 +35,24 @@ Neste documento você encontrará informações sobre a visão do produto a ser 
 | Switch Marketing          | Empresa referência em marketing digital      |  - Marketing  |
 | SD Consultoria          | Empresa que lida com consultoria e recomendação de títulos públicos     |  - Montar carteira de investimentos - Selecionar os títulos públicos para plataforma   |
 ### 3.2 User Environment
+
+Para finalizar o MVP serão necessários 3 desenvolver, esses mesmos serão responsáveis pela manunteção da plataforma e para futuras necessidades ou atualizaçes serão contratados novos desenvolvedores de acordo com a necessidade. Serã gastas 4 semanas para o desenvolvimento da plataforma e depois disso será iniciada a campanha de marketing, realizada pela SwitchMakerting focada em marketing digital nas redes sociais com o público indicado anteriormente.
+Será disponibilizado um contato por e-mail, no qual uma pessoa com ajuda de um robô de atendimento ficará responsável por resolver dúvidas dos clientes no horário comercial. Há pretensões de aumento da equipe de atendimento ao cosumidor de acordo com a demanda.
+O catálogo de investimento já foi montado pela SD Consultoria e não há pretensões para mudanças até 2021. 
+
 ## 4. Product Overview
 ### 4.1 Needs and Features
 
-| Need            | Priority | Features | Planned Realease |
-|-----------------|-------------|------------------|-------|
-| blank           | blank       |blank             | blank |
+| Need                           | Priority | Features                                                                                 | Planned Realease |
+|--------------------------------|----------|------------------------------------------------------------------------------------------| -----------------|
+| Sistema de Usuário             | 10       | - Login - Logout - Criação de contas - Perfil - Cancelamento de contas                   | 30 de Novembro   |
+| Gerenciamento de Investimentos | 9        | - Listagem de investimentos - Aplicação de investimentos - Cancelamento de investimentos | 30 de Novembro   |
+| Conexão com conta corrente     | 8        | - Cadastrar conta                                                                        | 30 de Novembro   |
+| Integração com o pix           | 5        | - Transferência via PIX                                                                  | 30 de Novembro   |
 
 ## 5 Other Product Requirements
 
-
-| Need            | Priority | Features | Planned Realease |
-|-----------------|-------------|------------------|-------|
-| blank           | blank       |blank             | blank |
+Nossa aplicação principal será um website que rodará em qualquer dispositivo conectado a internet. A interface será responsiva, com o design otimizado tanto para dispositivos mobiles como computadores de mesa. Ela também terá como foco a facilidade do usuário de navegar por ela, com poucas telas simples, que qualquer usuários até aqueles com menos aptidão com a tecnologia, poderão usua-lá sem problemas. A plataforma será robusta e terá uma futura transição para uma arquitetura de microserviços, diminuindo a probabilidade de erros de subsistemas fundamentais para o bom fucionamento da mesma.
+| Need                     | Priority |  Planned Realease |
+|--------------------------|----------| ------------------|
+| Responsividade           | 8        | 30 de Novembro    |
