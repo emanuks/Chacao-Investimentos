@@ -7,12 +7,12 @@ Neste documento você encontrará informações sobre a organização do projeto
 
 ____
 #### 1.  Key milestones
-A Start Date da Sprint é o Sprint Planing, feito com uma revisão do Backlog Project, fazendo alguma atualização caso necessário.
+A Start Date da Sprint é o Sprint Planning, feito com uma revisão do Backlog Project, fazendo alguma atualização caso necessário.
 A Meeting é nossa reunião após dois dias passados do início da Sprint para avaliarmos o andamento.
 A End Date da Sprint é o Sprint Review, feito em reunião com os membros para analisar o desenvolvimento da Sprint e possíveis melhorias para as próximas.
 O motivo de adaptarmos o Daily Scrum para o formato da Meeting dois dias após o início da Sprint é devido à pandemia, pelo formato ideal para os desenvolvedores iremos nos comunicar via WhatsApp quando acontecer algum imprevisto e teremos essa reunião oficial com data marcada para fazer o checkpoint da Sprint.
 
-| Milestone   | Sprint Planing | Meeting    | Sprint Review |
+| Milestone   | Sprint Planning | Meeting    | Sprint Review |
 |-------------|----------------| -----------| --------------|
 | Sprint 1    | 18/10/2020     | 20/10/2020 | 24/10/2020    |
 | Sprint 2    | 25/11/2020     | 27/10/2020 | 30/10/2020    |
