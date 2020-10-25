@@ -36,7 +36,7 @@ Neste documento você encontrará informações sobre a visão do produto, com f
 | SD Consultoria          | Empresa que lida com consultoria e recomendação de títulos públicos     |  - Montar carteira de investimentos<br> - Selecionar os títulos públicos para plataforma   |
 ### 3.2 User Environment
 
-Para finalizar o MVP serão necessários 3 desenvolvedores, esses mesmos serão responsáveis pela manunteção da plataforma, e para futuras features ou atualizações serão contratados novos desenvolvedores de acordo com a necessidade. Serão investidas 4 semanas para o desenvolvimento da plataforma e depois disso será iniciada a campanha de marketing, que será realizada pela Switch Makerting, focando em marketing digital nas redes sociais com o público indicado anteriormente.
+Para finalizar o MVP serão necessários 3 desenvolvedores, esses mesmos serão responsáveis pela manunteção da plataforma, e para futuras features ou atualizações serão contratados novos desenvolvedores de acordo com a necessidade. Serão investidas 4 semanas para o desenvolvimento da plataforma e depois disso será iniciada a campanha de marketing, que será realizada pela Switch Markerting, focando em marketing digital nas redes sociais com o público indicado anteriormente.
 Será disponibilizado um contato por e-mail, no qual uma pessoa com ajuda de um robô de atendimento ficará responsável por resolver dúvidas dos clientes em horário comercial. Há pretensões de aumento da equipe de atendimento ao consumidor de acordo com a demanda.
 O catálogo de investimento já foi montado pela SD Consultoria e não há pretensões para mudanças até 2021. 
 
