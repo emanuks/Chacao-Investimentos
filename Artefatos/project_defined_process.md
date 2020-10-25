@@ -31,7 +31,7 @@ ____
 #### Funds, Time, Location and Regulation
 O financiamento do projeto está sendo feito em maior parte pelo cliente e os desenvolvedores entraram na Chacão Investimentos como sócios fornecendo o conhecimento técnico e horas de serviço como parte da sociedade.
 O projeto será desenvolvido em quatro semanas de forma totalmente remota e sem horário fixo de trabalho, sendo que o importante será entregas as issues atribuídas a cada membro ao fim da Sprint, contando com um acompanhamento mútuo do time para que não existam imprevistos.
-Para transmitirmos a seriedade, confiança e segurança da Chacão investimentos a corretora de valores na CVM (Comissão de Valores Mobiliários, Lei 6.385/76) e ficará sob supervisão no site do Banco Central para verificar se foi incluída na relação de instituições em funcionamento do país.
+Para transmitirmos a seriedade, confiança e segurança da Chacão Investimentos a corretora de valores na CVM (Comissão de Valores Mobiliários, Lei 6.385/76) e ficará sob supervisão no site do Banco Central para verificar se foi incluída na relação de instituições em funcionamento do país.
 Para aumentar a confiabilidade é de interesse da corretora adquirir a certificação CETIP Certifica, além de ficar fiscalizando o site da B3 que organiza e fiscaliza empresas desse ramo.
 Outra preocupação da empresa é estar de acordo com a LGPD (Lei Geral de Proteção de Dados Pessoais, Lei nº 13.709/2018) para assegurar aos usuários a confiabilidade do destino das informações fornecidas à empresa. Ou seja, terceiros não terão acesso aos dados pessoais de nenhum usuário da plataforma e a qualquer momento ele pode escolher retirar suas informações de nosso banco de dados.
 ____
