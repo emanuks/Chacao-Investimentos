@@ -1,7 +1,13 @@
 <h1 align="center">Chacão Investimentos</h1>
 <h2 align="center">Glossary</h2>
 
-| Termo | Significado |
+#### Introduction
+Neste documento você encontrará definição de termos importantes usados no projeto. Estes termos são a base para a colaboração eficaz com os Stakeholders e outros membros da equipe.
+____
+
+#### Glossário
+
+| Termo | Definição |
 |-|-|
 | Artefato | Documento criado durante desenvolvimento de software. |
 | Backlog | Lista de requisitos de produtos e entregas que não fazem parte do trabalho atual, a serem priorizados e concluídos. |
@@ -26,3 +32,4 @@
 | Serviço | Meios de entregar valor para o usuário, facilitando os resultados que o usuário deseja alcançar. |
 | Sistema | Combinação de elementos interativos organizados para atingir um ou mais objetivos declarados. |
 | Software | Programas de computador, procedimentos e, possivelmente, documentação e dados associados relativos à operação de um sistema de computador.  |
+| Stakeholder | Indivíduo ou organização que tem um direito, compartilhamento ou interesse em um sistema ou em sua posse de características que atendam às suas necessidades e expectativas. |
