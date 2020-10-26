@@ -2,14 +2,14 @@
 <h2 align="center">Glossary</h2>
 
 #### Introduction
-Neste documento você encontrará definição de termos importantes usados no projeto. Estes termos são a base para a colaboração eficaz com os Stakeholders e outros membros da equipe.
+Neste documento você encontrará a definição de termos importantes usados no projeto, estes termos são a base para uma colaboração eficaz com os Stakeholders e outros membros do scrum team.
 ____
 
 #### Glossário
 
 | Termo | Definição |
 |-|-|
-| Artefato | Documento criado durante desenvolvimento de software. |
+| Artefato | Documento criado durante o desenvolvimento de software. |
 | Backlog | Lista de requisitos de produtos e entregas que não fazem parte do trabalho atual, a serem priorizados e concluídos. |
 | Ciclo de Vida | Evolução de um sistema, produto, serviço ou projeto. |
 | Cliente | Organização ou pessoa que recebe um produto ou serviço. |
@@ -27,8 +27,8 @@ ____
 | Produto | Resultado de um processo. |
 | Projeto | Um esforço temporário realizado para criar um produto, serviço ou resultado exclusivo. |
 | Requisito | Declaração que traduz ou expressa uma necessidade e suas restrições e condições associadas. |
-| Resultado | Informação devolvida ao cliente. |
-| Scrum | Framework de gerenciamento de projeto iterativo usado no desenvolvimento ágil, no qual uma equipe concorda com os itens de desenvolvimento de um backlog de requisitos e os produz em um curto período de algumas semanas. |
+| Resultado | Produto, serviço ou informação devolvida ao cliente. |
+| Scrum | Framework de gerenciamento de projeto iterativo usado no desenvolvimento ágil, no qual uma equipe concorda com os itens de desenvolvimento de um backlog de requisitos e os produz, geralmente, em um curto período de algumas semanas. |
 | Serviço | Meios de entregar valor para o usuário, facilitando os resultados que o usuário deseja alcançar. |
 | Sistema | Combinação de elementos interativos organizados para atingir um ou mais objetivos declarados. |
 | Software | Programas de computador, procedimentos e, possivelmente, documentação e dados associados relativos à operação de um sistema de computador.  |
