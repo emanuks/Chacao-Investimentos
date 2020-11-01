@@ -6,10 +6,10 @@
 Este documento fornece uma visão geral da arquitetura abrangente do sistema, usando uma série de views diferentes para descrever diferentes aspectos do sistema. O objetivo é capturar e transmitir as decisões de arquitetura significativas que foram tomadas no sistema.
 
 ## 2.Architectural goals and philosophy
-O deploy será realizada de forma simples, em somente um servidor, sem processamento paralelo para evitar dessincronização de informações. Como o sistema é um financeiro e disponibilidade via web, não será desenvolvido para suportar acesso offline. Os demais requisitos não funcionais foram descritos no documento de Visão.
+O deploy será realizada de forma simples, em somente um servidor, sem processamento paralelo para evitar dessincronização de informações. Como o sistema é financeiro e disponibilizado via web, não será desenvolvido para suportar acesso offline. Os demais requisitos não funcionais foram descritos no documento de Visão.
 
 ## 3.Assumptions and dependencies
-Será necessário para equipe ter conhecimentos de desenvolvimento no framework web RubyOnRails na sua versão 5. 
+Será necessário a equipe ter conhecimentos de desenvolvimento no framework web RubyOnRails na sua versão 5. 
 É importante também que a equipe tenha conhecimentos de HTML, SCSS e Javascript para lidar com o front-end da aplicação.
 
 ## 4.Architecturally significant requirements
@@ -20,33 +20,33 @@ Será necessário para equipe ter conhecimentos de desenvolvimento no framework 
 - O sistema deve criptografar as senhas do usuário.
 
 ## 5.Decisions, constraints, and justifications
-O padrão de arquitetura será MVC, porque utilizaremos o framework de desenvolvimento web que tem esse design como paradigma central. Além desse fator o MVC é um dos melhores padrões web, por simplificar o desenvolvimento
+O padrão de arquitetura será MVC, porque utilizaremos o framework de desenvolvimento web RubyOnRails, que tem esse design como paradigma central. Além desse fator o MVC é um dos mais indicados padrões web, tendo em vista que os mais diversos framework web utilizam desse pattern ou de alguma pequena variação dele.
 
 ## 6.Architectural Mechanisms
-Como utulizaremos o MVC, será destrinchada abaixo, a função da Model, View e Controller voltadas para o desenvolvimento web.
+Como utilizaremos o MVC, será destrinchada abaixo, a função da model, view e controller voltadas para o desenvolvimento web.
 ![mvc](https://img.portalgsti.com.br/cVaESgZSfs_B5NNehEEgYq3XVJ0=/708x0/https://www.portalgsti.com.br/media/uploads/fernandopalma/mvc.jpg)
-- Model: Tem a função de comunicar diretamente com o banco de dados e enviar dados para controller quando for requisitado
-- View: Tem a função de mostrar para o usuário as informações com os dados provenientes da controller
-- Controller: Tem a função de tratar os eventos de entradas, no diagrama esse evento é tratado por uma request HTTP como é feito em websites
+- Model: Tem a função de comunicar diretamente com o banco de dados e enviar dados para controller quando for requisitado.
+- View: Tem a função de mostrar para o usuário as informações com os dados provenientes da controller.
+- Controller: Tem a função de tratar os eventos de entradas. No diagrama esse evento é tratado por uma request HTTP como é feito na internet.
 
 ## 7.Key abstractions
 - Customer: Cliente da aplicação.
 - Admin: Administrador da aplicação.
-- Catálogo: Listagem do Tesouro Direto, fundo de investimentos e renda fixa.
-- Aplicação: Ação do usuário "comprar" um item do catálogo
+- Catálogo: Listagem do tesouro direto, fundo de investimentos e renda fixa.
+- Aplicação: Ação do usuário "comprar" um item do catálogo.
 
 ## 8.Layers or architectural framework
-Como utilizamos o framework ruby on rails, automaticamente precisamos utilizar o padrão de arquitetura MVC. Dividiremos o sistema em 3 sub-módulos: Sistema de cadastro de cliente, 
-Sistema de gerenciamento de Catálogo e o sistema de gerência de aplicações. O Sistema de cadastro de clientes possuirá duas model chamada User e outra chamada Role para armazenar as 
+Como utilizamos o framework ruby on rails, automaticamente precisamos utilizar o padrão de arquitetura MVC. Dividiremos o sistema em 3 sub-módulos: sistema de cadastro de cliente, 
+sistema de gerenciamento de catálogo e o sistema de gerência de aplicações. O Sistema de cadastro de clientes possuirá duas model, uma chamada User e outra chamada Role para armazenar as 
 funções do usuário dentro do sistema que no caso serão duas: Customer e Admin, e duas controller: UsersController que será responsável pelo CRUD do usuário e a SessionsController que 
-será responsável pela autenticação dos usuários no sistema. Agora no sistema de gerenciamento de catálogo possuirá 3 models e 3 controllers  com cruds padrões representando o gerenciamento 
-catálogo pelos admins da plataforma. E por último, o subsistema de gerenciamento de aplicações lidará com as aplicações do usuário e se comunicará direto com as models do subsistema de catálogo 
-para mostrar as opções do comprar para o clientes. Os detalhes da arquitetura serão elucidados no tópico 9
+será responsável pela autenticação dos usuários no sistema. Já o sistema de gerenciamento de catálogo possuirá 3 models e 3 controllers com cruds padrões representando o gerenciamento dos itens do
+catálogo pelos admins da plataforma. E por último, o subsistema de gerenciamento de aplicações lidará com os investimentos do usuário e se comunicará direto com as models do subsistema de catálogo 
+para mostrar as opções disponíveis para compra. Os detalhes da arquitetura serão elucidados no tópico 9.
 
 ## 9.Architectural views
 
 ### 9.1. Use-case View
-Nesse tópico serão mostrados as funcionalidades principais da plataforma em formato de diagrama com use-cases. Sendo que essas funçõe são as seguintes e serão melhores detalhadas abaixo:
+Nesse tópico serão mostrados as funcionalidades principais da plataforma em formato de diagrama com use-cases. As funcionalidades principais da plataforma são:
 - Login: Essa caso de uso descreve como os usuários podem logar na plataforma
 - Gerenciamento de Tesouro Direto: Esse caso de uso permite o administrador da plataforma, criar, editar, deletar e visualizar o tesouro direto no catálogo
 - Gerenciamento de Fundos de Investimentos: Esse caso de uso permite o administrador da plataforma, criar, editar, deletar e visualizar os fundos de investimento no catálogo
@@ -55,13 +55,13 @@ Nesse tópico serão mostrados as funcionalidades principais da plataforma em fo
 - Cadastro de Conta Corrente: Esse caso de uso permite o Customer: anexar uma conta corrente na sua conta da plataforma.
 - Gerenciamento de Aplicações: Esse caso de uso permite o Customer: criar, visualizar e cancelar suas aplicações
 - Apresentação e edição de dados cadastrais: Esse caso de uso permite o Customer: editar e visualizar seus dados cadastrais
-Com dois atores Administrador e Customer
+Com dois atores Administrador e Customer.
 
 ### 9.1.1 Architecturally-Significant Use Cases 
 ![User Case View](use_case_view.png)
 
 ### 9.2. Process View
-Nesse tópico será detalhado os processos dentro da aplicação, focando na responsabilidade de cada objeto e classe para realizar cada tarefa do use-case
+Nesse tópico será detalhado os processos dentro da aplicação, focando na responsabilidade de cada objeto e classe para realizar cada tarefa do use-case.
 
 ### 9.2.1 Processes
 ![Processes](process.png)
