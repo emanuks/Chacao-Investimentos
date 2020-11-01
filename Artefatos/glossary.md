@@ -10,7 +10,7 @@ ____
 | Termo | Definição |
 |-|-|
 | Artefato | Documento criado durante o desenvolvimento de software. |
-| Backlog | Lista de requisitos de produtos e entregas que não fazem parte do trabalho atual, a serem priorizados e concluídos. |
+| Backlog | Lista de requisitos de produtos e entregas a serem priorizados e concluídos, mas que não fazem parte do trabalho atual. |
 | Ciclo de Vida | Evolução de um sistema, produto, serviço ou projeto. |
 | Cliente | Organização ou pessoa que recebe um produto ou serviço. |
 | Componente | Uma parte que constitui um sistema. |
