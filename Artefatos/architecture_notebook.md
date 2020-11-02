@@ -3,7 +3,7 @@
 
 ## 1.Purpose
 
-Este documento fornece uma visão geral da arquitetura abrangente do sistema, usando uma série de views diferentes para descrever diferentes aspectos do sistema. O objetivo é capturar e transmitir as decisões de arquitetura significativas que foram tomadas no sistema.
+Este documento fornece uma visão geral da arquitetura abrangente do sistema, usando uma série de views diferentes para descrever diversos aspectos do sistema. O objetivo é capturar e transmitir as decisões de arquitetura significativas que foram tomadas no sistema.
 
 ## 2.Architectural goals and philosophy
 O deploy será realizada de forma simples, em somente um servidor, sem processamento paralelo para evitar dessincronização de informações. Como o sistema é financeiro e disponibilizado via web, não será desenvolvido para suportar acesso offline. Os demais requisitos não funcionais foram descritos no documento de Visão.
@@ -37,8 +37,8 @@ Como utilizaremos o MVC, será destrinchada abaixo, a função da model, view e 
 
 ## 8.Layers or architectural framework
 Como utilizamos o framework ruby on rails, automaticamente precisamos utilizar o padrão de arquitetura MVC. Dividiremos o sistema em 3 sub-módulos: sistema de cadastro de cliente, 
-sistema de gerenciamento de catálogo e o sistema de gerência de aplicações. O Sistema de cadastro de clientes possuirá duas model, uma chamada User e outra chamada Role para armazenar as 
-funções do usuário dentro do sistema que no caso serão duas: Customer e Admin, e duas controller: UsersController que será responsável pelo CRUD do usuário e a SessionsController que 
+sistema de gerenciamento de catálogo e o sistema de gerência de aplicações. O Sistema de cadastro de clientes possuirá duas models, uma chamada User e outra chamada Role para armazenar as 
+funções do usuário dentro do sistema que no caso serão duas: Customer e Admin, e duas controllers: UsersController que será responsável pelo CRUD do usuário e a SessionsController que 
 será responsável pela autenticação dos usuários no sistema. Já o sistema de gerenciamento de catálogo possuirá 3 models e 3 controllers com cruds padrões representando o gerenciamento dos itens do
 catálogo pelos admins da plataforma. E por último, o subsistema de gerenciamento de aplicações lidará com os investimentos do usuário e se comunicará direto com as models do subsistema de catálogo 
 para mostrar as opções disponíveis para compra. Os detalhes da arquitetura serão elucidados no tópico 9.
@@ -72,5 +72,5 @@ Nesse tópico será detalhado os subsistemas dentro da aplicação.
 ### 9.3.1 Architecture Overview - Susbystem Layering
 ![Subsistemas](logical_view.png)
 
-A aplicação é formada por três subsistemas principais, sendo que o o susbistema de usuários tem a responsabilidade de gerenciamento de usuários e sessions, o sistema de gerenciamento de catálogo 
-tem a responsabilidade de gerenciar a disponibilidade de investimentos na plataforma e o sistema de gerenciamento de aplicações, depende dos dois outros sistemas para gerenciar os invesitimentos dos usuários dentro da plataforma.
+A aplicação é formada por três subsistemas principais, sendo que o o subsistema de usuários tem a responsabilidade de gerenciamento de usuários e sessions, o sistema de gerenciamento de catálogo 
+tem a responsabilidade de gerenciar a disponibilidade de investimentos na plataforma e o sistema de gerenciamento de aplicações, depende dos dois outros sistemas para gerenciar os investimentos dos usuários dentro da plataforma.
