@@ -43,7 +43,7 @@ Os casos de uso Retirar Dinheiro, Depositar Fundos e Transferir Fundos precisam 
 A figura acima é apenas uma visão parcial do modelo de caso de uso. O modelo completo também inclui as descrições de cada ator, as descrições de cada caso de uso e as especificações para cada caso de uso. 
 ~~~~
 #### Modelo de caso de uso
-Tendo o exemplo acima explicitado e trazendo para a nossa realidade:
+Tendo o exemplo acima explicitado e trazendo para a realidade da Chacão Investimentos:
 
-
+![model_use_case](use_case_view.png)
 ____
