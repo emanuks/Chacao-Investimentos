@@ -35,8 +35,6 @@ Os diagramas seguirão esse exemplo de Diagrama de Caso de Uso disponível no Op
 ![Exemplo_Diagrama](exemplo-diagrama-caso-uso.png)
 
 Como explicitado no Open Up:
-
-
 Este diagrama mostra o assunto (atm:ATM), quatro atores (Cliente, Banco, Caixa e Profissional de Manutenção), cinco casos de uso (Retirar Dinheiro, Transferir Fundos, Depositar Fundos, Recarregar Máquina e Validar Usuário), três dependências <<include>> e as associações entre os atores e os casos de uso.
 
 Os casos de uso Retirar Dinheiro, Depositar Fundos e Transferir Fundos precisam identificar o usuário no sistema. Esse comportamento pode ser extraído para um novo caso de uso incluído chamado Validar Usuário, o qual os três casos de uso básicos incluem. Os casos de uso base são independentes do método utilizado para identificação do usuário, que é encapsulado no caso de uso de inclusão. Do ponto de vista dos casos de uso base, não importa se o método de identificação irá ler um cartão magnético, ou escanear a retina. Eles só dependem do resultado de Validar Usuário.
