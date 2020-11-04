@@ -3,7 +3,7 @@
 
 ____
 #### Introdução
-O modelo de casos de uso identifica um possível modelo das funções desejadas do sistema e de seu ambiente, ele serve também como uma espécie de contrato entre o cliente e os desenvolvedores. O artefato modelo de casos de uso mostra uma visão geral do comportamento esperado do sistema. É a base para o acordo entre os Stakeholders e a equipe do projeto sobre as funcionalidades do sistema. Serve também como um guia para o ciclo de vida de desenvolvimento de software.
+O modelo de casos de uso identifica um possível modelo das funções desejadas do sistema e de seu ambiente, ele serve também como uma espécie de contrato entre o cliente e os desenvolvedores. O artefato modelo de casos de uso mostra uma visão geral do comportamento esperado do sistema, ele é a base para o acordo entre os Stakeholders e a equipe do projeto sobre as funcionalidades do sistema. Serve também como um guia para o ciclo de vida de desenvolvimento de software.
 O artefato do modelo de casos de uso pode ser customizado para atender as necessidades da equipe. 
 
 De forma geral, o modelo de casos de uso descreve como os diferentes tipos de usuário interagem com o sistema para que determinado problema seja resolvido, ou determinada ação seja executada. Ou seja, ele descreve as metas dos usuários, e as interações entre usuários e sistema bem como o comportamento esperado.
