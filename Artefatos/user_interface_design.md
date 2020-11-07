@@ -5,7 +5,7 @@ ____
 #### Introdução
 O projeto de interface com o usuário descreve através de diagrama as interfaces e também o fluxo de utilização da aplicação por meio das interfaces. Serve também como um guia para prototipagem e implementação das interfaces do sistema.
 
-Nesse artefato serão apresentados dois diagramas que correspondem aos atores do sistema.
+Nesse artefato serão apresentados dois diagramas que correspondem as interfaces disponíveis aos atores do sistema.
 
 ____
 #### Diagrama de Interface de Cliente
