@@ -12,7 +12,7 @@ O documento de infraestrutura descrevá detalhadamente a rotina necessária para
  para o desenvolvimento e caso sejam validadas o processo segue para parte do merge da develop com a main, depois é criada a realease no github com o changelog e 
  automaticamente por meio do CD do heroku, o site é disponibilizado ao público.
  
- ![diagrama](digrama_infrastructure.png)
+ ![diagrama](diagrama_infrastructure.png)
  
  ## Especificação técnicas
  - Ambiente de produção e testes: Ubuntu 18 com 512MB de ram
