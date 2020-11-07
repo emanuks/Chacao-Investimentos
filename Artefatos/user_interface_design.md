@@ -17,5 +17,5 @@ ___
 #### Diagrama de Interface de Administrador
 
 Diagrama de interfaces disponíveis para administrador da aplicação.
-![Diagrama_Cliente](admin_diagram.png)
+![Diagrama_Admin](admin_diagram.png)
 ____
