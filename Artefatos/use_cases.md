@@ -259,7 +259,7 @@ ____
 - O caso de uso começa quando um produto precisa ser removido do sistema
 - Neste caso, o administrador sempre irá remover o produto e será redirecionado à página que lista os produtos da plataforma
 ____
-1. **Alternative Flows**
+5. **Alternative Flows**
 - Relações não tão bem definidas entre tabelas
 ____
 6. **Key Scenarios**
