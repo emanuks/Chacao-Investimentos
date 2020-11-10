@@ -123,10 +123,10 @@ CREATE TABLE "Emissora" (
 CREATE TABLE "AplicacaoFinanceira" (
   "id" integer PRIMARY KEY,
   "nome" text NOT NULL,
-  "usuario_id" integer,
-  "tesouro_direto_id" integer,
-  "fundo_investimento_id" integer,
-  "renda_fixa_id" integer
+  "usuario_id" integer NULL,
+  "tesouro_direto_id" integer NULL,
+  "fundo_investimento_id" integer NULL,
+  "renda_fixa_id" integer NULL
 );
 
 ALTER TABLE "Usuario" ADD FOREIGN KEY ("role_id") REFERENCES "Funcao" ("id");
