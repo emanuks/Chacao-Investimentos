@@ -193,6 +193,7 @@ ____
 ____
 4. **Basic Flow of Events**
 - O caso de uso começa quando um novo produto precisa ser inserido na plataforma
+- O admistrador preenche o formulário de criação de produto
 - Verifica se todos os dados obrigatórios estão preenchidos
 - Verifica se todos os dados preenchidos estão corretos de acordo com o seu tipo e restrições
 - Neste caso, o administrador sempre irá salvar o novo produto ou editar os dados para tentar salvar novamente
