@@ -122,6 +122,34 @@ ____
 
 ____
 ____
+<h3 align="center">Autenticação de Usuário</h3>
+
+1. **Brief Description**
+Este caso de uso descreve a autenticação de usuários ao acessar a plataforma Chacão Investimentos.
+____
+2. **Actors**
+- Cliente
+- Administrador
+____
+3. **Preconditions**
+- O usuário precisa estar cadastrado
+- As suas permissões precisam ser válidas e estarem ativas para o acesso à plataforma
+- Existem funcionalidades implementadas que dão suporte à autenticação de usuários
+____
+4. **Basic Flow of Events**
+- O caso de uso começa quando um usuário tenta acessar a plataforma
+- Neste caso, o usuário sempre será redirecionado à plataforma ou receberá uma mensagem de erro para tentar novamente o login
+____
+5. **Alternative Flows**
+- Usuário não existe
+____
+6. **Key Scenarios**
+- Erro na autenticação, tentar logar novamente ou criar novo cadastro
+____
+7. **Successful Completion**
+- Acesso à plataforma e redirecionamento para página principal
+____
+____
 <h3 align="center">Cadastro de Produto de Investimento</h3>
 
 1. **Brief Description**
@@ -137,6 +165,7 @@ ____
 ____
 4. **Basic Flow of Events**
 - O caso de uso começa quando um novo produto precisa ser inserido na plataforma
+- O admistrador preenche o formulário de criação de produto
 - Verifica se todos os dados obrigatórios estão preenchidos
 - Verifica se todos os dados preenchidos estão corretos de acordo com o seu tipo e restrições
 - Neste caso, o administrador sempre irá salvar o novo produto ou editar os dados para tentar salvar novamente
@@ -171,7 +200,7 @@ ____
 - O caso de uso começa quando um produto precisa ser removido do sistema
 - Neste caso, o administrador sempre irá remover o produto e será redirecionado à página que lista os produtos da plataforma
 ____
-1. **Alternative Flows**
+5. **Alternative Flows**
 - Relações não tão bem definidas entre tabelas
 ____
 6. **Key Scenarios**
