@@ -3,9 +3,9 @@
 
 ____
 
-Emanuel Silva de Medeiros
-Pedro Augusto Ramalho Duarte
-Waliff Cordeiro Bandeira
+- Emanuel Silva de Medeiros
+- Pedro Augusto Ramalho Duarte
+- Waliff Cordeiro Bandeira
 
 ____
 #### Introdução
