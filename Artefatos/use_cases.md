@@ -122,62 +122,6 @@ ____
 
 ____
 ____
-<h3 align="center">Deleção de Usuário</h3>
-
-
-1. **Brief Description**
-Este caso de uso descreve a deleção de usuários existentes na Chacão Investimentos.
-____
-2. **Actors**
-- Administrador
-- Cliente
-____
-3. **Preconditions**
-- Existir funcionalidades implementadas que dão suporte à deleção de usuários existentes
-- As relações entre as tabelas precisam estar bem definidas, assim como a especificação do que deve ocorrer em caso de exclusão de registros de uma tabela 
-____
-4. **Basic Flow of Events**
-- O caso de uso começa quando um usuário precisa ser removido do sistema
-- Neste caso, o usuário sempre irá remover o usuário e será redirecionado à página que lista os usuários da plataforma
-____
-5. **Alternative Flows**
-- Relações não tão bem definidas entre tabelas
-____
-6. **Key Scenarios**
-- Erro de deleção devido às relações não tão bem definidas
-____
-7. **Successful Completion**
-- Deleção do usuário
-____
-____
-<h3 align="center">Autenticação de Usuário</h3>
-
-1. **Brief Description**
-Este caso de uso descreve a autenticação de usuários ao acessar a plataforma Chacão Investimentos.
-____
-2. **Actors**
-- Cliente
-- Administrador
-____
-3. **Preconditions**
-- O usuário precisa estar cadastrado
-- As suas permissões precisam ser válidas e estarem ativas para o acesso à plataforma
-- Existem funcionalidades implementadas que dão suporte à autenticação de usuários
-____
-4. **Basic Flow of Events**
-- O caso de uso começa quando um usuário tenta acessar a plataforma
-- Neste caso, o usuário sempre será redirecionado à plataforma ou receberá uma mensagem de erro para tentar novamente o login
-____
-5. **Alternative Flows**
-- Usuário não existe
-____
-6. **Key Scenarios**
-- Erro na autenticação, tentar logar novamente ou criar novo cadastro
-____
-7. **Successful Completion**
-- Acesso à plataforma e redirecionamento para página principal
-____
-____
 <h3 align="center">Cadastro de Produto de Investimento</h3>
 
 1. **Brief Description**
@@ -193,7 +137,6 @@ ____
 ____
 4. **Basic Flow of Events**
 - O caso de uso começa quando um novo produto precisa ser inserido na plataforma
-- O admistrador preenche o formulário de criação de produto
 - Verifica se todos os dados obrigatórios estão preenchidos
 - Verifica se todos os dados preenchidos estão corretos de acordo com o seu tipo e restrições
 - Neste caso, o administrador sempre irá salvar o novo produto ou editar os dados para tentar salvar novamente
@@ -209,38 +152,6 @@ ____
 ____
 8. **Special Requirements**
 - O servidor precisa ter capacidade de armazenamento
-
-____
-____
-<h3 align="center">Edição de Produto de Investimento</h3>
-
-1. **Brief Description**
-Este caso de uso descreve a edição de produtos existentes na Chacão Investimentos.
-____
-2. **Actors**
-- Administrador
-____
-3. **Preconditions**
-- Existir funcionalidades implementadas que dão suporte à edição de usuários existentes
-- Campos específicos precisam ser preenchidos 
-____
-4. **Basic Flow of Events**
-- O caso de uso começa quando um produto precisa ter suas informações alteradas
-- Verifica se todos os dados obrigatórios estão preenchidos
-- Verifica se todos os dados preenchidos estão corretos de acordo com o seu tipo e restrições
-- Neste caso, o administrador sempre irá salvar a alteração dos novos dados ou editar os dados para tentar salvar novamente
-____
-5. **Alternative Flows**
-- Tipos inválidos de dados em determinados campos
-____
-6. **Key Scenarios**
-- Erro de edição por dados inválidos ou inexistentes
-____
-7. **Successful Completion**
-- Dados atualizados
-____
-8. **Special Requirements**
-- O servidor precisa ter capacidade de armazenamento para a alteração dos dados
 
 ____
 ____
@@ -260,7 +171,7 @@ ____
 - O caso de uso começa quando um produto precisa ser removido do sistema
 - Neste caso, o administrador sempre irá remover o produto e será redirecionado à página que lista os produtos da plataforma
 ____
-5. **Alternative Flows**
+1. **Alternative Flows**
 - Relações não tão bem definidas entre tabelas
 ____
 6. **Key Scenarios**
