@@ -175,7 +175,7 @@ ____
 - Erro na autenticação, tentar logar novamente ou criar novo cadastro
 ____
 7. **Successful Completion**
-- Acesso à plataforma
+- Acesso à plataforma e redirecionamento para página principal
 ____
 ____
 <h3 align="center">Cadastro de Produto de Investimento</h3>
