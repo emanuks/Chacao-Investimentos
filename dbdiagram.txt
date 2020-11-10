@@ -1,0 +1,138 @@
+/* Código para criação do diagrama através do diagram.io */
+/* https://dbdiagram.io/d/5f6112737da1ea736e2dfd53 */
+
+// ----  Usuario ---- //
+Table Usuario {
+  cpf integer [pk]
+  role_id integer [ref: > Funcao.id]
+  escolaridade_id integer [ref: > Escolaridade.id]
+  estado_civil_id integer [ref: > EstadoCivil.id] 
+  genero_id integer [ref: > Genero.id]
+  endereco_id int [ref: > Endereco.id]
+  senha text [not null]
+  nome text [not null]
+  data_nascimento date [not null]
+
+}
+
+Table Telefone {
+  id integer [pk]
+  usuario_id integer [ref: > Usuario.cpf]
+  ddd varchar(2) [not null]
+  numero varchar(10) [not null]
+}
+
+Table Funcao {
+  id integer [pk]
+  is_admin boolean [not null]
+}
+
+Table Endereco {
+  id integer [pk]
+  tipo_id integer [ref: > TipoEndereco.id]
+  estado_id integer [ref: > Estado.id]
+  cep varchar(14) [not null]
+  rua varchar(20) 
+  quadra integer
+  lote integer
+  numero integer
+}
+
+Table TipoEndereco {
+  id integer [pk]
+  nome text
+}
+
+Table Estado {
+  id integer [pk]
+  nome text [not null]
+}
+
+Table Cidade {
+  id integer [pk]
+  estado_id integer [ref: > Estado.id]
+  nome text [not null]
+}
+
+Table Bairro {
+  id integer [pk]
+  cidade_id integer [ref: > Cidade.id]
+  nome text [not null]
+}
+
+Table EstadoCivil {
+  id integer [pk]
+  nome text
+}
+
+Table Escolaridade {
+  id integer [pk]
+  nome text [not null]
+  curso text
+}
+
+Table Genero {
+  id integer [pk]
+  nome text
+}
+
+// ---- Produtos ---- //
+
+Table TesouroDireto {
+  id integer [pk]
+  indexador_id integer [ref: > Indexador.id]
+  nome text [not null, unique]
+  data_vencimento date [not null]
+  taxa float
+  valor float
+}
+
+Table Indexador {
+  id integer [pk]
+  nome text
+}
+
+Table FundoInvestimento {
+  id integer [pk]
+  prazo_resgate_id integer [ref: > PrazoResgate.id]
+  classe_id integer [ref: > Classe.id]
+  nome text [not null]
+  valor_minimo integer [not null]
+}
+
+Table Classe {
+  id integer [pk]
+  nome text
+}
+
+Table PrazoResgate {
+  id integer [pk]
+  prazo text
+}
+
+Table RendaFixa {
+  id integer [pk]
+  classe_id integer [ref: > Classe.id]
+  emissora_id integer [ref: > Emissora.id]
+  nome text [not null]
+  prazo_vencimento integer [not null]
+  horario_limite time [not null]
+  valor_minimo float [not null]
+  taxa_remuneracao float
+}
+
+Table Emissora {
+  id integer [pk]
+  endereco_id integer [ref: > Endereco.id]
+  nome text [not null]
+}
+
+Table AplicacaoFinanceira {
+  id integer [pk]
+  nome text [not null]
+  usuario_id integer [ref: > Usuario.cpf]
+  tesouro_direto_id integer [ref: > TesouroDireto.id, null]
+  fundo_investimento_id integer [ref: > FundoInvestimento.id, null]
+  renda_fixa_id integer [ref: > RendaFixa.id, null]
+  
+}
