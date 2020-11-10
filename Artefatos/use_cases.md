@@ -328,7 +328,7 @@ ____
 
 ____
 ____
-<h3 align="center">Listagem de aplicações de investimentos realizadas</h3>
+<h3 align="center">Listagem de aplicações de investimentos realizados</h3>
 
 1. **Brief Description**
 Este caso de uso descreve a listagem de produtos de investimento na Chacão Investimentos.
