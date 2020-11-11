@@ -11,19 +11,19 @@ CREATE TABLE "Usuario" (
 );
 
 CREATE TABLE "Telefone" (
-  "id" integer PRIMARY KEY,
+  "id" SERIAL PRIMARY KEY,
   "usuario_id" integer,
   "ddd" varchar(2) NOT NULL,
   "numero" varchar(10) NOT NULL
 );
 
 CREATE TABLE "Funcao" (
-  "id" integer PRIMARY KEY,
+  "id" SERIAL PRIMARY KEY,
   "is_admin" boolean NOT NULL
 );
 
 CREATE TABLE "Endereco" (
-  "id" integer PRIMARY KEY,
+  "id" SERIAL PRIMARY KEY,
   "tipo_id" integer,
   "estado_id" integer,
   "cep" varchar(14) NOT NULL,
@@ -34,17 +34,17 @@ CREATE TABLE "Endereco" (
 );
 
 CREATE TABLE "TipoEndereco" (
-  "id" integer PRIMARY KEY,
+  "id" SERIAL PRIMARY KEY,
   "nome" text
 );
 
 CREATE TABLE "Estado" (
-  "id" integer PRIMARY KEY,
+  "id" SERIAL PRIMARY KEY,
   "nome" text NOT NULL
 );
 
 CREATE TABLE "Cidade" (
-  "id" integer PRIMARY KEY,
+  "id" SERIAL PRIMARY KEY,
   "estado_id" integer,
   "nome" text NOT NULL
 );
@@ -56,23 +56,23 @@ CREATE TABLE "Bairro" (
 );
 
 CREATE TABLE "EstadoCivil" (
-  "id" integer PRIMARY KEY,
+  "id" SERIAL PRIMARY KEY,
   "nome" text
 );
 
 CREATE TABLE "Escolaridade" (
-  "id" integer PRIMARY KEY,
+  "id" SERIAL PRIMARY KEY,
   "nome" text NOT NULL,
   "curso" text
 );
 
 CREATE TABLE "Genero" (
-  "id" integer PRIMARY KEY,
+  "id" SERIAL PRIMARY KEY,
   "nome" text
 );
 
 CREATE TABLE "TesouroDireto" (
-  "id" integer PRIMARY KEY,
+  "id" SERIAL PRIMARY KEY,
   "indexador_id" integer,
   "nome" text UNIQUE NOT NULL,
   "data_vencimento" date NOT NULL,
@@ -81,12 +81,12 @@ CREATE TABLE "TesouroDireto" (
 );
 
 CREATE TABLE "Indexador" (
-  "id" integer PRIMARY KEY,
+  "id" SERIAL PRIMARY KEY,
   "nome" text
 );
 
 CREATE TABLE "FundoInvestimento" (
-  "id" integer PRIMARY KEY,
+  "id" SERIAL PRIMARY KEY,
   "prazo_resgate_id" integer,
   "classe_id" integer,
   "nome" text NOT NULL,
@@ -94,17 +94,17 @@ CREATE TABLE "FundoInvestimento" (
 );
 
 CREATE TABLE "Classe" (
-  "id" integer PRIMARY KEY,
+  "id" SERIAL PRIMARY KEY,
   "nome" text
 );
 
 CREATE TABLE "PrazoResgate" (
-  "id" integer PRIMARY KEY,
+  "id" SERIAL PRIMARY KEY,
   "prazo" text
 );
 
 CREATE TABLE "RendaFixa" (
-  "id" integer PRIMARY KEY,
+  "id" SERIAL PRIMARY KEY,
   "classe_id" integer,
   "emissora_id" integer,
   "nome" text NOT NULL,
@@ -115,13 +115,13 @@ CREATE TABLE "RendaFixa" (
 );
 
 CREATE TABLE "Emissora" (
-  "id" integer PRIMARY KEY,
+  "id" SERIAL PRIMARY KEY,
   "endereco_id" integer,
   "nome" text NOT NULL
 );
 
 CREATE TABLE "AplicacaoFinanceira" (
-  "id" integer PRIMARY KEY,
+  "id" SERIAL PRIMARY KEY,
   "nome" text NOT NULL,
   "usuario_id" integer NULL,
   "tesouro_direto_id" integer NULL,

@@ -16,19 +16,19 @@ Table Usuario {
 }
 
 Table Telefone {
-  id integer [pk]
+  id integer [pk, increment]
   usuario_id integer [ref: > Usuario.cpf]
   ddd varchar(2) [not null]
   numero varchar(10) [not null]
 }
 
 Table Funcao {
-  id integer [pk]
+  id integer [pk, increment]
   is_admin boolean [not null]
 }
 
 Table Endereco {
-  id integer [pk]
+  id integer [pk, increment]
   tipo_id integer [ref: > TipoEndereco.id]
   estado_id integer [ref: > Estado.id]
   cep varchar(14) [not null]
@@ -39,17 +39,17 @@ Table Endereco {
 }
 
 Table TipoEndereco {
-  id integer [pk]
+  id integer [pk, increment]
   nome text
 }
 
 Table Estado {
-  id integer [pk]
+  id integer [pk, increment]
   nome text [not null]
 }
 
 Table Cidade {
-  id integer [pk]
+  id integer [pk, increment]
   estado_id integer [ref: > Estado.id]
   nome text [not null]
 }
@@ -61,25 +61,25 @@ Table Bairro {
 }
 
 Table EstadoCivil {
-  id integer [pk]
+  id integer [pk, increment]
   nome text
 }
 
 Table Escolaridade {
-  id integer [pk]
+  id integer [pk, increment]
   nome text [not null]
   curso text
 }
 
 Table Genero {
-  id integer [pk]
+  id integer [pk, increment]
   nome text
 }
 
 // ---- Produtos ---- //
 
 Table TesouroDireto {
-  id integer [pk]
+  id integer [pk, increment]
   indexador_id integer [ref: > Indexador.id]
   nome text [not null, unique]
   data_vencimento date [not null]
@@ -88,12 +88,12 @@ Table TesouroDireto {
 }
 
 Table Indexador {
-  id integer [pk]
+  id integer [pk, increment]
   nome text
 }
 
 Table FundoInvestimento {
-  id integer [pk]
+  id integer [pk, increment]
   prazo_resgate_id integer [ref: > PrazoResgate.id]
   classe_id integer [ref: > Classe.id]
   nome text [not null]
@@ -101,17 +101,17 @@ Table FundoInvestimento {
 }
 
 Table Classe {
-  id integer [pk]
+  id integer [pk, increment]
   nome text
 }
 
 Table PrazoResgate {
-  id integer [pk]
+  id integer [pk, increment]
   prazo text
 }
 
 Table RendaFixa {
-  id integer [pk]
+  id integer [pk, increment]
   classe_id integer [ref: > Classe.id]
   emissora_id integer [ref: > Emissora.id]
   nome text [not null]
@@ -122,13 +122,13 @@ Table RendaFixa {
 }
 
 Table Emissora {
-  id integer [pk]
+  id integer [pk, increment]
   endereco_id integer [ref: > Endereco.id]
   nome text [not null]
 }
 
 Table AplicacaoFinanceira {
-  id integer [pk]
+  id integer [pk, increment]
   nome text [not null]
   usuario_id integer [ref: > Usuario.cpf]
   tesouro_direto_id integer [ref: > TesouroDireto.id, null]
