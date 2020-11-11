@@ -10,12 +10,12 @@ Nesse artefato serão apresentados dois diagramas que correspondem as interfaces
 ____
 #### Diagrama de Interface de Cliente
 
-Diagrama de interfaces disponíveis para cliente da aplicação.
+Diagrama de interfaces disponíveis para o cliente da aplicação.
 ![Diagrama_Cliente](customer_diagram.png)
 
 ___
 #### Diagrama de Interface de Administrador
 
-Diagrama de interfaces disponíveis para administrador da aplicação.
+Diagrama de interfaces disponíveis para o administrador da aplicação.
 ![Diagrama_Admin](admin_diagram.png)
 ____
