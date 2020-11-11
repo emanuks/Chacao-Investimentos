@@ -106,9 +106,7 @@ ____
 - Neste caso, o usuário sempre irá salvar a alteração dos novos dados ou editar os dados para tentar salvar novamente
 ____
 5. **Alternative Flows**
-- CPF no formato inválido
 - E-mail já foi inserido em outro cadastro
-- CPF já cadastrado
 - Tipos inválidos de dados em determinados campos
 ____
 6. **Key Scenarios**
