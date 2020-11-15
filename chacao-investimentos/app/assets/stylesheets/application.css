@@ -15,3 +15,12 @@
  *= require_tree .
  *= require_self
  */
+
+
+body {
+    background: linear-gradient(180deg, #B7D8FF 0%, rgba(183, 216, 255, 0.610417) 45.83%, rgba(169, 193, 221, 0.15) 100%);
+}
+
+.content {
+    min-height: 100vh;
+}

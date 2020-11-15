@@ -1,15 +1,18 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>ChacaoInvestimentos</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<html lang="pt-br">
+<head>
+  <title>ChacaoInvestimentos</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all' %>
-    <%= javascript_pack_tag 'application' %>
-  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+  <%= javascript_pack_tag 'application' %>
+</head>
 
-  <body>
-    <%= yield %>
-  </body>
+<body>
+<div class="content">
+  <%= yield %>
+</div>
+</body>
 </html>
