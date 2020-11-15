@@ -26,6 +26,10 @@
     <%= form.text_field :cpf %>
   </div>
 
+  <%= form.fields_for :phones do |builder| %>
+    <%= render "phones/fields", :f => builder %>
+  <% end %>
+
   <div class="actions">
     <%= form.submit %>
   </div>
