@@ -22,5 +22,8 @@ body {
 }
 
 .content {
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 50px;
     min-height: 100vh;
 }
