@@ -17,13 +17,23 @@
   </div>
 
   <div class="field">
-    <%= form.label :birth_date %>
-    <%= form.date_select :birth_date %>
+    <%= form.label :email %>
+    <%= form.email_field :email %>
   </div>
 
   <div class="field">
     <%= form.label :cpf %>
     <%= form.text_field :cpf %>
+  </div>
+
+  <div class="field">
+    <%= form.label :birth_date %>
+    <%= form.date_select :birth_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :password %>
+    <%= form.password_field :password %>
   </div>
 
   <%= form.fields_for :phones do |builder| %>
