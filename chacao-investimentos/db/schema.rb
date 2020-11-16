@@ -10,10 +10,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_15_020000) do
+ActiveRecord::Schema.define(version: 2020_11_16_225432) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "account_types", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "accounts", force: :cascade do |t|
+    t.bigint "user_id", null: false
+    t.bigint "account_type_id", null: false
+    t.string "number"
+    t.integer "agency"
+    t.integer "bank_code"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["account_type_id"], name: "index_accounts_on_account_type_id"
+    t.index ["user_id"], name: "index_accounts_on_user_id"
+  end
 
   create_table "phones", force: :cascade do |t|
     t.string "ddd"
@@ -36,5 +54,7 @@ ActiveRecord::Schema.define(version: 2020_11_15_020000) do
     t.index ["email"], name: "index_users_on_email", unique: true
   end
 
+  add_foreign_key "accounts", "account_types"
+  add_foreign_key "accounts", "users"
   add_foreign_key "phones", "users"
 end

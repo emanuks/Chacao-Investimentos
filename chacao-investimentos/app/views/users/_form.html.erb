@@ -11,36 +11,52 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
+  <div class="form-row">
+    <div class="form-group col">
+      <%= form.label 'Nome' %>
+      <%= form.text_field :name, class: 'form-control' %>
+    </div>
+    <div class="form-group col">
+      <%= form.label 'email' %>
+      <%= form.email_field :email, class: 'form-control' %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :email %>
-    <%= form.email_field :email %>
+  <div class="form-row">
+    <div class="form-group col">
+      <%= form.label 'Cpf' %>
+      <%= form.text_field :cpf, class: 'form-control' %>
+    </div>
+    <div class="form-group col">
+      <%= form.label 'Data de nascimento' %>
+      <%= form.date_select :birth_date, class: 'form-control' %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :cpf %>
-    <%= form.text_field :cpf %>
+  <div class="form-group">
+    <%= form.label 'Senha' %>
+    <%= form.password_field :password, class: 'form-control' %>
   </div>
 
-  <div class="field">
-    <%= form.label :birth_date %>
-    <%= form.date_select :birth_date %>
+  <div class="row">
+    <div class="col">
+      <h3> Informações de conta </h3>
+      <hr/>
+
+      <%= form.fields_for :account do |builder| %>
+        <%= render "accounts/fields", :f => builder %>
+      <% end %>
+    </div>
+    <div class="col">
+      <h3> Informação de endereço </h3>
+      <hr/>
+
+      <%= form.fields_for :phones do |builder| %>
+        <%= render "phones/fields", :f => builder %>
+      <% end %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= form.label :password %>
-    <%= form.password_field :password %>
-  </div>
 
-  <%= form.fields_for :phones do |builder| %>
-    <%= render "phones/fields", :f => builder %>
-  <% end %>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+  <%= form.submit "Criar Conta", class: 'btn btn-primary' %>
 <% end %>

@@ -16,6 +16,7 @@ class UsersController < ApplicationController
   def new
     @user = User.new
     @user.phones.build
+    @user.accounts.build
   end
 
   # GET /users/1/edit
