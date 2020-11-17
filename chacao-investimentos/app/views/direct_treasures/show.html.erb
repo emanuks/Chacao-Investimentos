@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Index:</strong>
+  <%= @direct_treasure.index %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @direct_treasure.name %>
+</p>
+
+<p>
+  <strong>Due date:</strong>
+  <%= @direct_treasure.due_date %>
+</p>
+
+<p>
+  <strong>Tax:</strong>
+  <%= @direct_treasure.tax %>
+</p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @direct_treasure.value %>
+</p>
+
+<%= link_to 'Edit', edit_direct_treasure_path(@direct_treasure) %> |
+<%= link_to 'Back', direct_treasures_path %>

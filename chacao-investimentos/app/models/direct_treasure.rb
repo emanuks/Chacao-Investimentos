@@ -1,0 +1,2 @@
+class DirectTreasure < ApplicationRecord
+end

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :direct_treasures
   root 'application#landing'
 
   resources :users
