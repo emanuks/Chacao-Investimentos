@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
+  before_action :require_your_self, only: [:show, :edit, :update, :destroy]
 
   def index
     @users = User.all
@@ -12,7 +13,7 @@ class UsersController < ApplicationController
     @user = User.new
     @user.phones.build
     @user.accounts.build
-    @user.address.build
+    @user.addresses.build
   end
 
   def edit
@@ -20,10 +21,10 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
-
+    @user.is_admin = false
     respond_to do |format|
       if @user.save
-        format.html { redirect_to @user, notice: 'User was successfully created.' }
+        format.html { redirect_to root_path, notice: 'User was successfully created.' }
         format.json { render :show, status: :created, location: @user }
       else
         format.html { render :new }

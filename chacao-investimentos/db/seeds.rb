@@ -7,3 +7,4 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 AccountType.create(name: 'Conta Corrente')
+User.create(email: 'admin@admin.com', password: '1234')
