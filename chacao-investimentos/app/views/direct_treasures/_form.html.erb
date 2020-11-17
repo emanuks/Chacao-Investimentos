@@ -1,0 +1,52 @@
+<%= form_with(model: direct_treasure, local: true) do |form| %>
+  <% if direct_treasure.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(direct_treasure.errors.count, "error") %> prohibited this direct_treasure from being saved:</h2>
+
+      <ul>
+        <% direct_treasure.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="text-size">
+    <div class="padding-header form-row justify-content-around">
+      <div class="form-group col-md-5">
+        <%= form.label "Nome" %>
+        <%= form.text_field :name, class: "form-control" %>
+      </div>
+      <div class="form-group col-md-5">
+        <%= form.label "Indexador" %>
+        <%= form.text_field :index, class: "form-control" %>
+      </div>
+    </div>
+
+    <div class="pt-5 form-row justify-content-around">
+      <div class="form-group col-md-5">
+        <%= form.label "Taxa" %>
+        <%= form.text_field :tax, class: "form-control" %>
+      </div>
+
+      <div class="form-group col-md-5">
+        <%= form.label "Preço Unitário" %>
+        <%= form.text_field :value, class: "form-control" %>
+      </div>
+    </div>
+
+    <div class="padding-left pt-5">
+      <%= form.label "Data de Vencimento" %>
+      <%= form.date_select :due_date %>
+    </div>
+
+
+    <div class="form-row justify-content-center pt-5">
+      <div class="pr-1">
+        <%= form.submit "Criar", class: "btn btn-color" %>
+      </div>
+      <div class="pl-1">
+        <%= link_to 'Back', direct_treasures_path, class: "btn btn-color" %>
+      </div>
+    </div>
+  </div>
+<% end %>
