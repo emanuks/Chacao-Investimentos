@@ -1,30 +1,23 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
 
-  # GET /users
-  # GET /users.json
   def index
     @users = User.all
   end
 
-  # GET /users/1
-  # GET /users/1.json
   def show
   end
 
-  # GET /users/new
   def new
     @user = User.new
     @user.phones.build
     @user.accounts.build
+    @user.address.build
   end
 
-  # GET /users/1/edit
   def edit
   end
 
-  # POST /users
-  # POST /users.json
   def create
     @user = User.new(user_params)
 
@@ -39,8 +32,6 @@ class UsersController < ApplicationController
     end
   end
 
-  # PATCH/PUT /users/1
-  # PATCH/PUT /users/1.json
   def update
     respond_to do |format|
       if @user.update(user_params)
@@ -53,8 +44,6 @@ class UsersController < ApplicationController
     end
   end
 
-  # DELETE /users/1
-  # DELETE /users/1.json
   def destroy
     @user.destroy
     respond_to do |format|
@@ -64,13 +53,17 @@ class UsersController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_user
-      @user = User.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def user_params
-      params.require(:user).permit(:email, :password, :name, :birth_date, :cpf, phone_attributes: [:id, :ddd, :number])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_user
+    @user = User.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def user_params
+    params.require(:user).permit(:email, :password, :name, :birth_date, :cpf,
+                                 phones_attributes: [:id, :ddd, :number],
+                                 accounts_attributes: [:id, :bank_code, :agency, :number, :account_type_id],
+                                 address_attributes: [:id, :city, :state, :number, :complement, :cep, :neighbordhood])
+  end
 end

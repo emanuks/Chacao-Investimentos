@@ -33,9 +33,16 @@
     </div>
   </div>
 
-  <div class="form-group">
-    <%= form.label 'Senha' %>
-    <%= form.password_field :password, class: 'form-control' %>
+  <div class="form-row">
+    <div class="form-group col">
+      <%= form.label 'Senha' %>
+      <%= form.password_field :password, class: 'form-control' %>
+    </div>
+    <div class="form-group col">
+      <%= form.fields_for :phones do |builder| %>
+        <%= render "phones/fields", :f => builder %>
+      <% end %>
+    </div>
   </div>
 
   <div class="row">
@@ -43,7 +50,7 @@
       <h3> Informações de conta </h3>
       <hr/>
 
-      <%= form.fields_for :account do |builder| %>
+      <%= form.fields_for :accounts do |builder| %>
         <%= render "accounts/fields", :f => builder %>
       <% end %>
     </div>
@@ -51,8 +58,8 @@
       <h3> Informação de endereço </h3>
       <hr/>
 
-      <%= form.fields_for :phones do |builder| %>
-        <%= render "phones/fields", :f => builder %>
+      <%= form.fields_for :addresses do |builder| %>
+        <%= render "addresses/fields", :f => builder %>
       <% end %>
     </div>
   </div>
