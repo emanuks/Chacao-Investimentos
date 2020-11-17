@@ -7,4 +7,10 @@ class User < ApplicationRecord
   accepts_nested_attributes_for :phones
   accepts_nested_attributes_for :accounts
   accepts_nested_attributes_for :addresses
+
+
+  def phone
+    phone = self.phones.first
+    "(#{phone.ddd}) #{phone.number}"
+  end
 end

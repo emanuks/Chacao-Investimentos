@@ -1,19 +1,52 @@
-<p id="notice"><%= notice %></p>
+<h3> Informações de usuário</h3>
+<hr/>
 
-<p>
-  <strong>Name:</strong>
-  <%= @user.name %>
-</p>
+<div class="form-row">
+  <div class="form-group col">
+    <h3> Nome </h3>
+    <p> <%= @user.name %></p>
+  </div>
+  <div class="form-group col">
+    <h3> Email </h3>
+    <p> <%= @user.email %></p>
+  </div>
+</div>
 
-<p>
-  <strong>Birth date:</strong>
-  <%= @user.birth_date %>
-</p>
+<div class="form-row">
+  <div class="form-group col">
+    <h3> CPF </h3>
+    <p><%= @user.cpf %></p>
+  </div>
+  <div class="form-group col">
+    <h3> Data nascimento </h3>
+    <p><%= @user.birth_date %></p>
+  </div>
+</div>
 
-<p>
-  <strong>Cpf:</strong>
-  <%= @user.cpf %>
-</p>
+<div class="form-row">
+  <div class="form-group col">
+    <h3> Celular </h3>
+    <p><%= @user.phone %></p>
+  </div>
+</div>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<div class="row">
+  <div class="col">
+    <h3> Informações de conta </h3>
+    <hr/>
+
+    <% unless @user.accounts.blank? %>
+      <%= render "accounts/show", :account => @user.accounts.first %>
+    <% end %>
+  </div>
+  <div class="col">
+    <h3> Informação de endereço </h3>
+    <hr/>
+
+    <% unless @user.addresses.blank? %>
+      <%= render "addresses/show", :address => @user.addresses.first %>
+    <% end %>
+  </div>
+</div>
+
+
