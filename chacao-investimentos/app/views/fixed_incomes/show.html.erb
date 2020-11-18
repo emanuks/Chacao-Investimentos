@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<div class="border-bottom border-dark">
+  <h1 class="pb-3">Renda Fixa</h1>
+</div>
+
+<div class="text-size">
+  <div class="padding-header form-row justify-content-around">
+    <div class="col-md-5 d-flex flex-column">
+      <p>Nome da Entidade Emissora</p>
+      <p class="text-center text-secondary">
+        <%= @fixed_income.entity %>
+      </p>
+    </div>
+
+    <div class="col-md-5 d-flex flex-column">
+      <p>Classe</p>
+      <p class="text-center text-secondary">
+        <%= @fixed_income.category %>
+      </p>
+    </div>
+  </div>
+
+  <div class="pt-5 form-row justify-content-around">
+    <div class="col-md-5 d-flex flex-column">
+      <p>Prazo de Vencimento</p>
+      <p class="text-center text-secondary">
+        <%= @fixed_income.due_date %>
+      </p>
+    </div>
+
+    <div class="col-md-5 d-flex flex-column">
+      <p>Taxa de Remuneração</p>
+      <p class="text-center text-secondary">
+        <%= @fixed_income.tax %>
+      </p>
+    </div>
+  </div>
+
+  <div class="pt-5 form-row justify-content-around">
+    <div class="col-md-5 d-flex flex-column">
+      <p>Valor Mínimo</p>
+      <p class="text-center text-secondary">
+        <%="R$ #{@fixed_income.value}" %>
+      </p>
+    </div>
+
+    <div class="col-md-5 d-flex flex-column">
+      <p>Horário Limite</p>
+      <p class="text-center text-secondary">
+        <%= @fixed_income.time_limit.strftime("%H:%M") %>
+      </p>
+    </div>
+  </div>
+
+  <div class="form-row justify-content-center pt-5">
+    <div class="pr-1">
+      <%= link_to 'Excluir', @fixed_income, class: "btn btn-color", method: :delete, data: { confirm: 'Are you sure?' } %>
+    </div>
+    <div class="pl-1">
+      <%= link_to 'Voltar', fixed_incomes_path, class: "btn btn-color" %>
+    </div>
+  </div>
+</div>

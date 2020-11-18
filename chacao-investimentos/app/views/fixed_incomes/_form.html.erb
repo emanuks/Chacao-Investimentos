@@ -1,0 +1,60 @@
+<%= form_with(model: fixed_income, local: true) do |form| %>
+  <% if fixed_income.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(fixed_income.errors.count, "error") %> prohibited this fixed_income from being saved:</h2>
+
+      <ul>
+        <% fixed_income.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="text-size">
+    <div class="padding-header form-row justify-content-around">
+      <div class="form-group col-md-5">
+        <%= form.label :entity, "Nome da Entidade Emissora" %>
+        <%= form.text_field :entity, class: "form-control" %>
+      </div>
+      <div class="form-group col-md-5">
+        <%= form.label :category, "Classe" %>
+        <%= form.select :category, options_for_select(["CDB", "LCA", "LCI", "LF", "LC"]), {}, class: "form-control" %>
+      </div>
+    </div>
+
+    <div class="pt-5 form-row justify-content-around">
+      <div class="form-group col-md-5">
+        <%= form.label :due_date, "Prazo de Vencimento" %>
+        <%= form.number_field :due_date, class: "form-control" %>
+      </div>
+
+      <div class="form-group col-md-5">
+        <%= form.label :tax, "Taxa de Remuneração" %>
+        <%= form.number_field :tax, class: "form-control" %>
+      </div>
+    </div>
+
+    <div class="pt-5 form-row justify-content-around">
+
+      <div class="form-group col-md-5">
+        <%= form.label :value, "Valor mínimo" %>
+        <%= form.number_field :value, class: "form-control" %>
+      </div>
+
+      <div class="form-group col-md-5">
+        <%= form.label :time_limit, "Horário limite" %>
+        <%= form.time_select :time_limit, class: "form-control" %>
+      </div>
+
+    </div>
+
+    <div class="form-row justify-content-center pt-5">
+      <div class="pr-1">
+        <%= form.submit "Criar", class: "btn btn-color" %>
+      </div>
+      <div class="pl-1">
+        <%= link_to 'Voltar', fixed_incomes_path, class: "btn btn-color" %>
+      </div>
+    </div>
+  </div>
+<% end %>
