@@ -1,0 +1,47 @@
+<%= form_with(model: investment_fund, local: true) do |form| %>
+  <% if investment_fund.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(investment_fund.errors.count, "error") %> prohibited this investment_fund from being saved:</h2>
+
+      <ul>
+        <% investment_fund.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="text-size">
+    <div class="padding-header form-row justify-content-around">
+      <div class="form-group col-md-5">
+        <%= form.label :name, "Nome" %>
+        <%= form.text_field :name, class: "form-control" %>
+      </div>
+      <div class="form-group col-md-5">
+        <%= form.label :category, "Classe" %>
+        <%= form.select :category, options_for_select(["Ação", "Cambial", "Multimercado", "Renda Fixa"]), {}, class: "form-control" %>
+      </div>
+    </div>
+
+    <div class="pt-5 form-row justify-content-around">
+      <div class="form-group col-md-5">
+        <%= form.label :value, "Valor mínimo" %>
+        <%= form.text_field :value, class: "form-control" %>
+      </div>
+
+      <div class="form-group col-md-5">
+        <%= form.label :redemption_period, "Prazo de Resgate" %>
+        <%= form.select :redemption_period, options_for_select(["D+1", "D+4", "D+30", "D+60"]), {}, class: "form-control" %>
+      </div>
+    </div>
+
+    <div class="form-row justify-content-center pt-5">
+      <div class="pr-1">
+        <%= form.submit "Criar", class: "btn btn-color" %>
+      </div>
+      <div class="pl-1">
+        <%= link_to 'Voltar', investment_funds_path, class: "btn btn-color" %>
+      </div>
+    </div>
+  </div>
+<% end %>
