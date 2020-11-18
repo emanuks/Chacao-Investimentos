@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :fixed_incomes
+  resources :investment_funds
   resources :direct_treasures
   root 'application#landing', as: :home
 

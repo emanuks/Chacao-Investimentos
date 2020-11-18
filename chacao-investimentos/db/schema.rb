@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_17_213030) do
+ActiveRecord::Schema.define(version: 2020_11_18_021021) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -51,6 +51,26 @@ ActiveRecord::Schema.define(version: 2020_11_17_213030) do
     t.string "name"
     t.date "due_date"
     t.float "tax"
+    t.float "value"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "fixed_incomes", force: :cascade do |t|
+    t.string "category"
+    t.string "entity"
+    t.integer "due_date"
+    t.time "time_limit"
+    t.float "tax"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.float "value"
+  end
+
+  create_table "investment_funds", force: :cascade do |t|
+    t.string "category"
+    t.string "name"
+    t.string "redemption_period"
     t.float "value"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
