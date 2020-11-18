@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :direct_treasures
-  root 'application#landing'
+  root 'application#landing', as: :home
 
   resources :users
 
