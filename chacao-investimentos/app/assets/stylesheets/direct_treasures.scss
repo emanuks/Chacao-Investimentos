@@ -6,14 +6,20 @@
   padding-top: 75px;
 }
 
-.padding-left {
-  padding-left: 65px;
+.due-date {
+  width: 24rem;
 }
 
 .btn-color {
   background-color: #686DA1;
   color: white;
-  font-size: 23px;
+  font-size: 20px;
+  transition: opacity 0.2s;
+}
+
+.btn-color:hover {
+  opacity: 0.8;
+  color: white;
 }
 
 .text-size {

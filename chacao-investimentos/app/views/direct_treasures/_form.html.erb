@@ -13,39 +13,40 @@
   <div class="text-size">
     <div class="padding-header form-row justify-content-around">
       <div class="form-group col-md-5">
-        <%= form.label "Nome" %>
+        <%= form.label :name, "Nome" %>
         <%= form.text_field :name, class: "form-control" %>
       </div>
       <div class="form-group col-md-5">
-        <%= form.label "Indexador" %>
-        <%= form.text_field :index, class: "form-control" %>
+        <%= form.label :index, "Indexador" %>
+        <%= form.select :index, options_for_select(["IPCA","SELIC","Prefixado"]), {}, class: "form-control" %>
       </div>
     </div>
 
     <div class="pt-5 form-row justify-content-around">
       <div class="form-group col-md-5">
-        <%= form.label "Taxa" %>
+        <%= form.label :tax, "Taxa" %>
         <%= form.text_field :tax, class: "form-control" %>
       </div>
 
       <div class="form-group col-md-5">
-        <%= form.label "Preço Unitário" %>
+        <%= form.label :value, "Preço Unitário" %>
         <%= form.text_field :value, class: "form-control" %>
       </div>
     </div>
-
-    <div class="padding-left pt-5">
-      <%= form.label "Data de Vencimento" %>
-      <%= form.date_select :due_date %>
+    
+    <div class="d-flex justify-content-center">
+      <div class="due-date form-group pt-5">
+        <%= form.label :due_date, "Data de Vencimento" %>
+        <%= form.date_field :due_date, min: Date.today, value: Date.today, class: "form-control" %>
+      </div>
     </div>
-
 
     <div class="form-row justify-content-center pt-5">
       <div class="pr-1">
         <%= form.submit "Criar", class: "btn btn-color" %>
       </div>
       <div class="pl-1">
-        <%= link_to 'Back', direct_treasures_path, class: "btn btn-color" %>
+        <%= link_to 'Voltar', direct_treasures_path, class: "btn btn-color" %>
       </div>
     </div>
   </div>

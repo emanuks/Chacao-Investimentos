@@ -1,29 +1,57 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Index:</strong>
-  <%= @direct_treasure.index %>
-</p>
+<div class="border-bottom border-dark">
+  <h1 class="pb-3">Tesouro Direto</h1>
+</div>
 
-<p>
-  <strong>Name:</strong>
-  <%= @direct_treasure.name %>
-</p>
+<div class="text-size">
+  <div class="padding-header form-row justify-content-around">
+    <div class="col-md-5 d-flex flex-column">
+      <p>Nome</p>
+      <p class="text-center text-secondary">
+        <%= @direct_treasure.name %>
+      </p>
+    </div>
 
-<p>
-  <strong>Due date:</strong>
-  <%= @direct_treasure.due_date %>
-</p>
+    <div class="col-md-5 col-md-5 d-flex flex-column">
+      <p>Indexador</p>
+      <p class="text-center text-secondary">
+        <%= @direct_treasure.index %>
+      </p>
+    </div>
+  </div>
 
-<p>
-  <strong>Tax:</strong>
-  <%= @direct_treasure.tax %>
-</p>
+  <div class="pt-5 form-row justify-content-around">
+    <div class="col-md-5 d-flex flex-column">
+      <p>Taxa</p>
+      <p class="text-center text-secondary">
+        <%="#{@direct_treasure.tax} %" %>
+      </p>
+    </div>
 
-<p>
-  <strong>Value:</strong>
-  <%= @direct_treasure.value %>
-</p>
+    <div class="col-md-5 d-flex flex-column">
+      <p>Preço Unitário</p>
+      <p class="text-center text-secondary">
+        <%="R$ #{@direct_treasure.value}" %>
+      </p>
+    </div>
+  </div>
+    
+  <div class="d-flex justify-content-center">
+    <div class="due-date pt-5">
+      <p>Data de Vencimento</p>
+      <p class="text-center text-secondary">
+        <%= @direct_treasure.due_date %>
+      </p>
+    </div>
+  </div>
 
-<%= link_to 'Edit', edit_direct_treasure_path(@direct_treasure) %> |
-<%= link_to 'Back', direct_treasures_path %>
+  <div class="form-row justify-content-center pt-5">
+    <div class="pr-1">
+      <%= link_to 'Excluir', @direct_treasure, class: "btn btn-color", method: :delete, data: { confirm: 'Are you sure?' } %>
+    </div>
+    <div class="pl-1">
+      <%= link_to 'Voltar', direct_treasures_path, class: "btn btn-color" %>
+    </div>
+  </div>
+</div>
