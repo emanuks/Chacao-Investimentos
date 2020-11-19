@@ -5,21 +5,48 @@ ____
 
 |T. ID|Test Scenarios|Description|Test Step|Expected Result|Actual Result|
 |:----:|:----:|:----:|:----:|:----:|:----:|
-|1|Criação de novos usuários|Teste da funcionalidade de criação de novos usuários que não possuem permissões administrativas|1. Entre no site<br>2. Clique na opção cadastrar no menu inicial<br>3.Inserir valores válidos para todos os campos de cadastro  de usuário<br>4.Clicar em cadastrar|Usuário criado com sucesso|Conforme o esperado|
-|2|Credenciais de login válidos|Teste da funcionalidade de login da aplicação para garantir que um usuário registrado tenha permissão para fazer login com CPF e senha|1. Entre no site<br>2. Navegue para a página de login<br>3.Inserir CPF válido<br>4.Inserir senha válida<br>5.Clicar no botão acessar|Login efetuado com sucesso|Conforme o esperado|
-|3|Criação de produtos de investimento|Teste da funcionalidade de criação de produtos de investimento para usuários administradores|1. Entre no site como usuário administrador<br>2. Navegue para a página de criação de produtos de investimento correspondente (Renda Fixa, Fundo de Investimento ou Tesouro Direto)<br>3.Inserir valores válidos para todos os campos<br>4.Clicar em adicionar|Produto de investimento criado com sucesso|Conforme o esperado|
-|4|Visualização de produtos de investimento|Teste da funcionalidade de visualização dos produtos de investimentos|1. Acesse a plataforma<br>2. Na página inicial clique em "Ver produtos de investimento"|Listagem de produtos de investimentos realizada com sucesso|Conforme o esperado|
-|5|Filtragem de produtos de investimento|Teste da funcionalidade de filtragem dos produtos de investimentos|1. Acesse a plataforma<br>2. Na página inicial clique em "Ver produtos de investimento"<br>3. Escolha a categoria do produto a ser filtrada (Renda Fixa, Fundo de Investimento ou Tesouro Direto)|Listagem apenas dos produtos da categoria selecionada|Conforme o esperado|
-|6|Visualização de um produto de investimento|Teste da funcionalidade de visualização de produto de investimento específico|1. Acesse a plataforma<br>2. Na página inicial clique em "Ver produtos de investimento" <br>3.Selecione um produto de investimento|Informações do produto disponibilizadas|Conforme o esperado|
-|7|Compra de produtos de investimento|Teste da funcionalidade de compra de produtos de investimento|1. Faça a autenticação para acessar a plataforma como usuário<br>2. Navegue para a página de produtos de investimentos (index) <br>3.Selecione um produto de investimento (Renda Fixa, Fundo de Investimento ou Tesouro Direto)<br>4.Clicar em realizar aplicação|Aplicação financeira realizada com sucesso|Conforme o esperado|
-|8|Remoção de produtos de investimento|Teste da funcionalidade de remoção de produtos de investimento para usuários administradores|1. Entre no site como usuário administrador<br>2.Selecione um produto de investimento<br>3. Clique em excluir|Produto excluído com sucesso|Conforme o esperado|
+|1|Criação de produtos de investimento|Teste da funcionalidade de criação de produtos de investimento para usuários administradores|1. Entre no site como usuário administrador<br>2. Navegue para a página de criação de produtos de investimento correspondente (Renda Fixa, Fundo de Investimento ou Tesouro Direto)<br>3.Inserir valores válidos para todos os campos<br>4.Clicar em adicionar|Produto de investimento criado com sucesso|Conforme o esperado|
+|2|Realizar logout|Teste da funcionalidade de deslogar o usuário da plataforma|1. Realize a autenticação na plataforma<br>2. Selecione a opção sair no canto superior direito<br>3.Será redirecionado à página principal<br>4.Aparecerá uma mensagem de logout realizado com sucesso|Usuário desconectado da plataforma com sucesso|Conforme o esperado|
+|3|Criação de novos usuários|Teste da funcionalidade de criação de novos usuários que não possuem permissões administrativas|1. Entre no site<br>2. Clique na opção cadastrar no menu inicial<br>3.Inserir valores válidos para todos os campos de cadastro  de usuário<br>4.Clicar em cadastrar|Usuário criado com sucesso|Conforme o esperado|
+|4|Credenciais de login válidos|Teste da funcionalidade de login da aplicação para garantir que um usuário registrado tenha permissão para fazer login com CPF e senha|1. Entre no site<br>2. Navegue para a página de login<br>3.Inserir CPF válido<br>4.Inserir senha válida<br>5.Clicar no botão acessar|Login efetuado com sucesso|Conforme o esperado|
+|5|Visualização de produtos de investimento|Teste da funcionalidade de visualização dos produtos de investimentos|1. Acesse a plataforma<br>2. Na página inicial clique em "Ver produtos de investimento"|Listagem de produtos de investimentos realizada com sucesso|Conforme o esperado|
+|6|Filtragem de produtos de investimento|Teste da funcionalidade de filtragem dos produtos de investimentos|1. Acesse a plataforma<br>2. Na página inicial clique em "Ver produtos de investimento"<br>3. Escolha a categoria do produto a ser filtrada (Renda Fixa, Fundo de Investimento ou Tesouro Direto)|Listagem apenas dos produtos da categoria selecionada|Conforme o esperado|
+|7|Visualização de um produto de investimento|Teste da funcionalidade de visualização de produto de investimento específico|1. Acesse a plataforma<br>2. Na página inicial clique em "Ver produtos de investimento" <br>3.Selecione um produto de investimento|Informações do produto disponibilizadas|Conforme o esperado|
+|8|Compra de produtos de investimento|Teste da funcionalidade de compra de produtos de investimento|1. Faça a autenticação para acessar a plataforma como usuário<br>2. Navegue para a página de produtos de investimentos (index) <br>3.Selecione um produto de investimento (Renda Fixa, Fundo de Investimento ou Tesouro Direto)<br>4.Clicar em realizar aplicação|Aplicação financeira realizada com sucesso|Conforme o esperado|
+|9|Remoção de produtos de investimento|Teste da funcionalidade de remoção de produtos de investimento para usuários administradores|1. Entre no site como usuário administrador<br>2.Selecione um produto de investimento<br>3. Clique em excluir|Produto excluído com sucesso|Conforme o esperado|
 
 
 ____
 
 <h2 align="center">Especificação de Dados</h2>
 
-##### T. ID 1 - Criação de novos usuários
+____
+
+##### T. ID 1 - Criação de produtos de investimento
+
+1. Entre no site como usuário administrador
+   1. CPF: 92482292042
+   2. Senha: 1234
+2. Navegue para a página de criação de produtos de investimento correspondente Fundo de Investimento
+3. No campo nome do produto digite: Riza Daikon
+4. No campo classe digite: Cambial
+5. No campo prazo de resgate digite: D + 30
+6. No campo valor mínimo da aplicação digite: 25
+7. Clicar em adicionar
+8. Aparecerá uma mensagem de produto inserido com sucesso
+
+____
+
+##### T. ID 2 - Teste da funcionalidade de deslogar o usuário da plataforma
+
+1. Realize a autenticação na plataforma
+2. Selecione a opção sair no canto superior direito
+3. Será redirecionado à página principal
+4. Aparecerá uma mensagem de logout realizado com sucesso
+
+____
+
+##### T. ID 3 - Criação de novos usuários
 1. Entre no site<br>2. Clique na opção cadastrar no menu inicial<br>3.Inserir valores válidos para todos os campos de cadastro  de usuário<br>4.Clicar em cadastrar
 1.  Entre no site
 2.  Clique na opção cadastrar no menu inicial
@@ -39,7 +66,7 @@ ____
 
 ____
 
-##### T. ID 2 - Credenciais de login válidos
+##### T. ID 4 - Credenciais de login válidos
 
 1. Entre no site
 2. Navegue para a página de login
@@ -50,29 +77,14 @@ ____
 
 ____
 
-##### T. ID 3 - Criação de produtos de investimento
-
-1. Entre no site como usuário administrador
-   1. CPF: 92482292042
-   2. Senha: 1234
-2. Navegue para a página de criação de produtos de investimento correspondente Fundo de Investimento
-3. No campo nome do produto digite: Riza Daikon
-4. No campo classe digite: Cambial
-5. No campo prazo de resgate digite: D + 30
-6. No campo valor mínimo da aplicação digite: 25
-7. Clicar em adicionar
-8. Aparecerá uma mensagem de produto inserido com sucesso
-
-____
-
-##### T. ID 4 - Visualização de produtos de investimento
+##### T. ID 5 - Visualização de produtos de investimento
 
 1. Acesse a plataforma
 2. Na página inicial clique em "Ver produtos de investimento"
 
 ____
 
-##### T. ID 5 - Filtragem de produtos de investimento
+##### T. ID 6 - Filtragem de produtos de investimento
 
 1. Acesse a plataforma
 2. Na página inicial clique em "Ver produtos de investimento"
@@ -81,7 +93,7 @@ ____
 
 ____
 
-##### T. ID 6 - Visualização de um produto de investimento
+##### T. ID 7 - Visualização de um produto de investimento
 
 1. Acesse a plataforma
 2. Na página inicial clique em "Ver produtos de investimento" 
@@ -90,7 +102,7 @@ ____
 
 ____
 
-##### T. ID 7 - Compra de produtos de investimento
+##### T. ID 8 - Compra de produtos de investimento
 
 1. Faça a autenticação para acessar a plataforma como usuário
    1. No campo CPF digite: 86420785022
@@ -104,7 +116,7 @@ ____
 
 ____
 
-##### T. ID 7 - Remoção de produtos de investimento
+##### T. ID 9 - Remoção de produtos de investimento
 
 1. Entre no site como usuário administrador
    1. CPF: 92482292042
