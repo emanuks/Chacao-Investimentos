@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <i class="fas fa-chart-line fa-2x"></i>
-  <a class="navbar-brand mr-3" href="#"> Chacão Investimentos</a>
+  <%= link_to "Chacão Investimentos", root_path, class: 'navbar-brand mr-3'%>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -11,7 +11,7 @@
         <%= link_to "Logout", logout_path, class: 'nav-item nav-link', method: :delete %>
       <% else %>
         <%= link_to "Login", login_path, class: 'nav-item nav-link' %>
-        <%= link_to "Entrar", new_user_path, class: 'nav-item nav-link' %>
+        <%= link_to "Cadastre-se", new_user_path, class: 'nav-item nav-link' %>
       <% end %>
     </div>
   </div>
