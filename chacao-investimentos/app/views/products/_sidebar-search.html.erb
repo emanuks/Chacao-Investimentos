@@ -3,7 +3,7 @@
   <div class="sidebar-header">
     <h3 class="border-bottom border-dark pb-3">Filtros</h3>
   </div>
-  <%= form_with url: products_filter_path, method: :get, local: true do |form| %>
+  <%= form_with url: products_path, method: :get, local: true do |form| %>
     <ul class="pt-3 list-unstyled components box-size">
       <li>
         <%= form.check_box :direct_treasure, {checked: true}, value: :direct_treasure%>
