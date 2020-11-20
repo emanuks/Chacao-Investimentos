@@ -1,0 +1,74 @@
+class ApplicationFIsController < ApplicationController
+  before_action :set_application_fi, only: [:show, :edit, :update, :destroy]
+
+  # GET /application_fis
+  # GET /application_fis.json
+  def index
+    @application_fis = ApplicationFi.all
+  end
+
+  # GET /application_fis/1
+  # GET /application_fis/1.json
+  def show
+  end
+
+  # GET /application_fis/new
+  def new
+    @application_fi = ApplicationFi.new
+  end
+
+  # GET /application_fis/1/edit
+  def edit
+  end
+
+  # POST /application_fis
+  # POST /application_fis.json
+  def create
+    @application_fi = ApplicationFi.new(application_fi_params)
+
+    respond_to do |format|
+      if @application_fi.save
+        format.html { redirect_to @application_fi, notice: 'Application fi was successfully created.' }
+        format.json { render :show, status: :created, location: @application_fi }
+      else
+        format.html { render :new }
+        format.json { render json: @application_fi.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  # PATCH/PUT /application_fis/1
+  # PATCH/PUT /application_fis/1.json
+  def update
+    respond_to do |format|
+      if @application_fi.update(application_fi_params)
+        format.html { redirect_to @application_fi, notice: 'Application fi was successfully updated.' }
+        format.json { render :show, status: :ok, location: @application_fi }
+      else
+        format.html { render :edit }
+        format.json { render json: @application_fi.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  # DELETE /application_fis/1
+  # DELETE /application_fis/1.json
+  def destroy
+    @application_fi.destroy
+    respond_to do |format|
+      format.html { redirect_to application_fis_url, notice: 'Application fi was successfully destroyed.' }
+      format.json { head :no_content }
+    end
+  end
+
+  private
+    # Use callbacks to share common setup or constraints between actions.
+    def set_application_fi
+      @application_fi = ApplicationFi.find(params[:id])
+    end
+
+    # Only allow a list of trusted parameters through.
+    def application_fi_params
+      params.require(:application_fi).permit(:user_id, :fixe_income_id, :value)
+    end
+end

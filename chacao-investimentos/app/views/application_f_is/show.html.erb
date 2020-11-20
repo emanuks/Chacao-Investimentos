@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @application_fi.user_id %>
+</p>
+
+<p>
+  <strong>Fixe income:</strong>
+  <%= @application_fi.fixe_income_id %>
+</p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @application_fi.value %>
+</p>
+
+<%= link_to 'Edit', edit_application_fi_path(@application_fi) %> |
+<%= link_to 'Back', application_fis_path %>
