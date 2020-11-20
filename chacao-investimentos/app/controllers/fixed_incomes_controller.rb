@@ -1,5 +1,6 @@
 class FixedIncomesController < ApplicationController
   before_action :set_fixed_income, only: [:show, :edit, :update, :destroy]
+  before_action :require_admin, only: [:destroy, :new, :create]
 
   # GET /fixed_incomes
   # GET /fixed_incomes.json

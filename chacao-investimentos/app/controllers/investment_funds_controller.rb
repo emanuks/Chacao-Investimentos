@@ -1,5 +1,6 @@
 class InvestmentFundsController < ApplicationController
   before_action :set_investment_fund, only: [:show, :edit, :update, :destroy]
+  before_action :require_admin, only: [:destroy, :new, :create]
 
   # GET /investment_funds
   # GET /investment_funds.json

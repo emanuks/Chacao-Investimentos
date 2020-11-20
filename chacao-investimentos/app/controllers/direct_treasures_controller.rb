@@ -1,5 +1,6 @@
 class DirectTreasuresController < ApplicationController
   before_action :set_direct_treasure, only: [:show, :edit, :update, :destroy]
+  before_action :require_admin, only: [:destroy, :new, :create]
 
   # GET /direct_treasures
   # GET /direct_treasures.json
