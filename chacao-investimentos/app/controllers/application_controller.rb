@@ -9,14 +9,11 @@ class ApplicationController < ActionController::Base
   end
 
   def require_admin
-    if logged_in?
-      restrict_access unless current_user.is_admin?
-    end
+    restrict_access unless current_user&.is_admin?
   end
 
   def logged_in?
     restrict_access unless current_user
-    false
   end
 
   def is_user?

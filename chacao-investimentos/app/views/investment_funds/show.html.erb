@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<div class="border-bottom border-dark">
+<div class="border-bottom border-dark col">
   <h1 class="pb-3">Fundo de Investimento</h1>
 </div>
 
@@ -32,17 +32,31 @@
     <div class="col-md-5 d-flex flex-column">
       <p>Valor Mínimo</p>
       <p class="text-center text-secondary">
-        <%="R$ #{@investment_fund.value}" %>
+        <%= "R$ #{@investment_fund.value}" %>
       </p>
     </div>
   </div>
-
-  <div class="form-row justify-content-center pt-5">
-    <div class="pr-1">
-      <%= link_to 'Excluir', @investment_fund, class: "btn btn-color", method: :delete, data: { confirm: 'Are you sure?' } %>
+  <% if current_user&.is_admin? %>
+    <div class="form-row justify-content-center pt-5">
+      <div class="pr-1">
+        <%= link_to 'Excluir', @investment_fund, class: "btn btn-color", method: :delete, data: {confirm: 'Are you sure?'} %>
+      </div>
+      <div class="pl-1">
+        <%= link_to 'Voltar', products_path, class: "btn btn-color" %>
+      </div>
     </div>
-    <div class="pl-1">
-      <%= link_to 'Voltar', investment_funds_path, class: "btn btn-color" %>
+  <% elsif current_user %>
+    <div class="form-row justify-content-center pt-5">
+      <div class="pr-1">
+        <%= link_to 'Excluir', @investment_fund, class: "btn btn-color", method: :delete, data: {confirm: 'Are you sure?'} %>
+      </div>
+      <div class="pl-1">
+        <%= link_to 'Voltar', products_path, class: "btn btn-color" %>
+      </div>
     </div>
-  </div>
+  <% else %>
+    <div class="form-row justify-content-center pt-5">
+      <%= link_to 'Voltar', products_path, class: "btn btn-color" %>
+    </div>
+  <% end %>
 </div>

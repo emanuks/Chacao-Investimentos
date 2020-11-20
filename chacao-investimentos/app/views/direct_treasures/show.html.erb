@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<div class="border-bottom border-dark">
+<div class="border-bottom border-dark col">
   <h1 class="pb-3">Tesouro Direto</h1>
 </div>
 
@@ -46,12 +46,27 @@
     </div>
   </div>
 
-  <div class="form-row justify-content-center pt-5">
-    <div class="pr-1">
-      <%= link_to 'Excluir', @direct_treasure, class: "btn btn-color", method: :delete, data: { confirm: 'Are you sure?' } %>
+  <% if current_user&.is_admin? %>
+    <div class="form-row justify-content-center pt-5">
+      <div class="pr-1">
+        <%= link_to 'Excluir', @direct_treasure, class: "btn btn-color", method: :delete, data: {confirm: 'Are you sure?'} %>
+      </div>
+      <div class="pl-1">
+        <%= link_to 'Voltar', products_path, class: "btn btn-color" %>
+      </div>
     </div>
-    <div class="pl-1">
-      <%= link_to 'Voltar', direct_treasures_path, class: "btn btn-color" %>
+  <% elsif current_user %>
+    <div class="form-row justify-content-center pt-5">
+      <div class="pr-1">
+        <%= link_to 'Excluir', @direct_treasure, class: "btn btn-color", method: :delete, data: {confirm: 'Are you sure?'} %>
+      </div>
+      <div class="pl-1">
+        <%= link_to 'Voltar', products_path, class: "btn btn-color" %>
+      </div>
     </div>
-  </div>
+  <% else %>
+    <div class="form-row justify-content-center pt-5">
+      <%= link_to 'Voltar', products_path, class: "btn btn-color" %>
+    </div>
+  <% end %>
 </div>
