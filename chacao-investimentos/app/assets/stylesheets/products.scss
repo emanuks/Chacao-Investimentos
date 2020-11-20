@@ -13,7 +13,7 @@
 .btn-color {
     background-color: #686DA1;
     color: white;
-    font-size: 20px;
+    font-size: 17px !important;
     transition: opacity 0.2s;
 }
 
@@ -89,4 +89,13 @@
 
 .navbar-padding {
     padding-left: 0 !important;
+}
+
+.box-size {
+  font-size: 17px;
+}
+
+.align-box {
+  margin-top: 12px;
+  margin-right: 4px;
 }
