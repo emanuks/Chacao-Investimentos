@@ -6,7 +6,7 @@ class UserSessionsController < ApplicationController
   end
 
   def create
-    if login(params[:email], params[:password])
+    if login(params[:username], params[:password])
       flash[:success] = 'Seja muito bem-vindo(a)!'
       redirect_to root_path
     else
