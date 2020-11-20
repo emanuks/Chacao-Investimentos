@@ -20,6 +20,14 @@
             <% @direct_treasures.each do |dt| %>
                 <%= render 'layouts/dt-card', direct_treasure: dt %>
             <% end %>
+
+          <% @fixed_incomes.each do |fi| %>
+            <%= render 'layouts/fi-card', fixed_income: fi %>
+          <% end %>
+
+          <% @investment_funds.each do |invf| %>
+            <%= render 'layouts/if-card', investment_fund: invf %>
+          <% end %>
         </div>
     </div>
 </div>
