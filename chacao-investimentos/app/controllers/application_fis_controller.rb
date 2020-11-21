@@ -1,4 +1,4 @@
-class ApplicationFIsController < ApplicationController
+class ApplicationFisController < ApplicationController
   before_action :set_application_fi, only: [:show, :edit, :update, :destroy]
 
   # GET /application_fis
@@ -14,6 +14,7 @@ class ApplicationFIsController < ApplicationController
 
   # GET /application_fis/new
   def new
+    @fixed_income = FixedIncome.find(params[:fi_id])
     @application_fi = ApplicationFi.new
   end
 
@@ -24,8 +25,11 @@ class ApplicationFIsController < ApplicationController
   # POST /application_fis
   # POST /application_fis.json
   def create
-    @application_fi = ApplicationFi.new(application_fi_params)
-
+    @application_fi = ApplicationFi.new(
+        user_id: params[:user_id],
+        fixed_income_id: params[:fi_id],
+        value: params[:value]
+    )
     respond_to do |format|
       if @application_fi.save
         format.html { redirect_to @application_fi, notice: 'Application fi was successfully created.' }
@@ -69,6 +73,6 @@ class ApplicationFIsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def application_fi_params
-      params.require(:application_fi).permit(:user_id, :fixe_income_id, :value)
+      params.require(:application_fi).permit(:user_id, :fixed_income_id, :value)
     end
 end
