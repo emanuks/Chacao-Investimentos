@@ -24,6 +24,6 @@ class ApplicationController < ActionController::Base
 
   def restrict_access
     flash[:info] = 'Não permitido'
-    redirect_to home_path
+    redirect_to root_path
   end
 end
