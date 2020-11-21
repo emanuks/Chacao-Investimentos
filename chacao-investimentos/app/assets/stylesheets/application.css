@@ -27,3 +27,15 @@ body {
     padding-top: 50px;
     min-height: 100vh;
 }
+
+.btn-color {
+    background-color: #686DA1;
+    color: white;
+    font-size: 14px;
+    transition: opacity 0.2s;
+}
+
+.btn-color:hover {
+    opacity: 0.8;
+    color: white;
+}

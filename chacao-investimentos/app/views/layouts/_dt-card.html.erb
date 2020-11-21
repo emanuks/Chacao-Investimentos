@@ -1,0 +1,15 @@
+<div class="p-3">
+  <div class="card h-100 product-card shadow-sm">
+    <div class="card-body d-flex flex-column justify-content-around" id="card-body">
+      <%= link_to show_direct_treasure_path(direct_treasure), class: "product-title text-center" do %>
+        <h5 class="card-title max-lines-2"><%= direct_treasure.name %></h5>
+      <% end %>
+      <h5 class="card-title d-flex justify-content-center">Tesouro Direto</h5>
+      <div class="d-flex justify-content-center">
+        <%= link_to show_direct_treasure_path(direct_treasure), class: "btn btn-color w-50" do %>
+          <span><strong><%="R$ #{direct_treasure.value}" %></strong></span>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

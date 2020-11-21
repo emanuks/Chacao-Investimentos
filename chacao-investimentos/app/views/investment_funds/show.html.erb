@@ -1,0 +1,62 @@
+<p id="notice"><%= notice %></p>
+
+<div class="border-bottom border-dark col">
+  <h1 class="pb-3">Fundo de Investimento</h1>
+</div>
+
+<div class="text-size">
+  <div class="padding-header form-row justify-content-around">
+    <div class="col-md-5 d-flex flex-column">
+      <p>Nome</p>
+      <p class="text-center text-secondary">
+        <%= @investment_fund.name %>
+      </p>
+    </div>
+
+    <div class="col-md-5 d-flex flex-column">
+      <p>Classe</p>
+      <p class="text-center text-secondary">
+        <%= @investment_fund.category %>
+      </p>
+    </div>
+  </div>
+
+  <div class="pt-5 form-row justify-content-around">
+    <div class="col-md-5 d-flex flex-column">
+      <p>Prazo de Resgate</p>
+      <p class="text-center text-secondary">
+        <%= @investment_fund.redemption_period %>
+      </p>
+    </div>
+
+    <div class="col-md-5 d-flex flex-column">
+      <p>Valor Mínimo</p>
+      <p class="text-center text-secondary">
+        <%= "R$ #{@investment_fund.value}" %>
+      </p>
+    </div>
+  </div>
+  <% if current_user&.is_admin? %>
+    <div class="form-row justify-content-center pt-5">
+      <div class="pr-1">
+        <%= link_to 'Excluir', @investment_fund, class: "btn btn-color", method: :delete, data: {confirm: 'Are you sure?'} %>
+      </div>
+      <div class="pl-1">
+        <%= link_to 'Voltar', products_path, class: "btn btn-color" %>
+      </div>
+    </div>
+  <% elsif current_user %>
+    <div class="form-row justify-content-center pt-5">
+      <div class="pr-1">
+        <%= link_to 'Excluir', @investment_fund, class: "btn btn-color", method: :delete, data: {confirm: 'Are you sure?'} %>
+      </div>
+      <div class="pl-1">
+        <%= link_to 'Voltar', products_path, class: "btn btn-color" %>
+      </div>
+    </div>
+  <% else %>
+    <div class="form-row justify-content-center pt-5">
+      <%= link_to 'Voltar', products_path, class: "btn btn-color" %>
+    </div>
+  <% end %>
+</div>

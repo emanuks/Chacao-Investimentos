@@ -1,0 +1,27 @@
+// Place all the styles related to the DirectTreasures controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.padding-header {
+  padding-top: 75px;
+}
+
+.due-date {
+  width: 24rem;
+}
+
+.btn-color {
+  background-color: #686DA1;
+  color: white;
+  font-size: 20px;
+  transition: opacity 0.2s;
+}
+
+.btn-color:hover {
+  opacity: 0.8;
+  color: white;
+}
+
+.text-size {
+  font-size: 20px;
+}

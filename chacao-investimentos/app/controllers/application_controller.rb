@@ -8,10 +8,22 @@ class ApplicationController < ActionController::Base
     end
   end
 
+  def require_admin
+    restrict_access unless current_user&.is_admin?
+  end
+
+  def logged_in?
+    restrict_access unless current_user
+  end
+
+  def is_user?
+    not current_user.is_admin
+  end
+
   private
 
   def restrict_access
     flash[:info] = 'Não permitido'
-    redirect_to root_path
+    redirect_to home_path
   end
 end
