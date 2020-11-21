@@ -25,18 +25,18 @@
     <div class="col-md-5 d-flex flex-column">
       <p>Taxa</p>
       <p class="text-center text-secondary">
-        <%="#{@direct_treasure.tax} %" %>
+        <%= "#{@direct_treasure.tax} %" %>
       </p>
     </div>
 
     <div class="col-md-5 d-flex flex-column">
       <p>Preço Unitário</p>
       <p class="text-center text-secondary">
-        <%="R$ #{@direct_treasure.value}" %>
+        <%= "R$ #{@direct_treasure.value}" %>
       </p>
     </div>
   </div>
-    
+
   <div class="d-flex justify-content-center">
     <div class="due-date pt-5 text-center">
       <p>Data de Vencimento</p>
@@ -58,7 +58,10 @@
   <% elsif current_user %>
     <div class="form-row justify-content-center pt-5">
       <div class="pr-1">
-        <%= link_to 'Excluir', @direct_treasure, class: "btn btn-color", method: :delete, data: {confirm: 'Are you sure?'} %>
+        <button type="button" class="btn btn-color" data-toggle="modal" data-target="#application-fi">
+          Realizar investimento
+        </button>
+        <%= render 'layouts/modal', object: @direct_treasure, name: @direct_treasure.name, url: new_application_dt_path %>
       </div>
       <div class="pl-1">
         <%= link_to 'Voltar', products_path, class: "btn btn-color" %>

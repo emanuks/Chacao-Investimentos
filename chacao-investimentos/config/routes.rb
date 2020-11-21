@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :application_dts
+  resources :application_ifs
   resources :application_fis
   resources :fixed_incomes
   resources :investment_funds
