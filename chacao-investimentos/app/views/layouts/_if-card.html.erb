@@ -7,7 +7,7 @@
       <h5 class="card-title d-flex justify-content-center">Fundo de Investimento</h5>
       <div class="d-flex justify-content-center">
         <%= link_to show_investment_fund_path(investment_fund), class: "btn btn-color w-50" do %>
-          <span><strong><%="R$ #{investment_fund.value}" %></strong></span>
+          <span><strong> <%= number_to_currency(investment_fund.value, :unit => "R$ ", :separator => ",", :delimiter => ".") %></strong></span>
         <% end %>
       </div>
     </div>

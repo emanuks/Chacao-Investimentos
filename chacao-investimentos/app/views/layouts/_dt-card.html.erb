@@ -7,7 +7,7 @@
       <h5 class="card-title d-flex justify-content-center">Tesouro Direto</h5>
       <div class="d-flex justify-content-center">
         <%= link_to show_direct_treasure_path(direct_treasure), class: "btn btn-color w-50" do %>
-          <span><strong><%="R$ #{direct_treasure.value}" %></strong></span>
+          <span><strong><%= number_to_currency(direct_treasure.value, :unit => "R$ ", :separator => ",", :delimiter => ".") %></strong></span>
         <% end %>
       </div>
     </div>
