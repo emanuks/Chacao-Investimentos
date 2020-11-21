@@ -7,7 +7,7 @@
       <h5 class="card-title d-flex justify-content-center"> Renda Fixa </h5>
       <div class="d-flex justify-content-center">
         <%= link_to show_fixed_income_path(fixed_income), class: "btn btn-color w-50" do %>
-          <span><strong><%="R$ #{fixed_income.value}" %></strong></span>
+          <span><strong><%= number_to_currency(fixed_income.value, :unit => "R$ ", :separator => ",", :delimiter => ".") %></strong></span>
         <% end %>
       </div>
     </div>

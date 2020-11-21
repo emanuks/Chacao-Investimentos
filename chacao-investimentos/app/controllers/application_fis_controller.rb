@@ -26,8 +26,8 @@ class ApplicationFisController < ApplicationController
   # POST /application_fis.json
   def create
     @application_fi = ApplicationFi.new(
-        user_id: params[:user_id],
-        fixed_income_id: params[:fi_id],
+        user_id: current_user.id,
+        fixed_income_id: params[:object_id],
         value: params[:value]
     )
     respond_to do |format|
@@ -73,6 +73,6 @@ class ApplicationFisController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def application_fi_params
-      params.require(:application_fi).permit(:user_id, :fixed_income_id, :value)
+      params.require(:application_fi).permit(:fixed_income_id, :value)
     end
 end

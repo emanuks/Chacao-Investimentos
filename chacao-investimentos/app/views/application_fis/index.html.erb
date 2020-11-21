@@ -6,7 +6,7 @@
   <thead>
     <tr>
       <th>User</th>
-      <th>Fixe income</th>
+      <th>Fixed income</th>
       <th>Value</th>
       <th colspan="3"></th>
     </tr>
@@ -16,7 +16,7 @@
     <% @application_fis.each do |application_fi| %>
       <tr>
         <td><%= application_fi.user_id %></td>
-        <td><%= application_fi.fixe_income_id %></td>
+        <td><%= application_fi.fixed_income_id %></td>
         <td><%= application_fi.value %></td>
         <td><%= link_to 'Show', application_fi %></td>
         <td><%= link_to 'Edit', edit_application_fi_path(application_fi) %></td>
