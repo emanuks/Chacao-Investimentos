@@ -8,7 +8,7 @@ class UserSessionsController < ApplicationController
   def create
     if login(params[:username], params[:password])
       flash[:success] = 'Seja muito bem-vindo(a)!'
-      redirect_to root_path
+      redirect_to home_path
     else
       flash.now[:warning] = 'Dados inválidos! Tente novamente!'
       render 'new'
@@ -18,7 +18,7 @@ class UserSessionsController < ApplicationController
   def destroy
     logout
     flash[:notice] = 'Logout realizado com sucesso! Até breve!'
-    redirect_to root_path
+    redirect_to home_path
   end
 
 end
