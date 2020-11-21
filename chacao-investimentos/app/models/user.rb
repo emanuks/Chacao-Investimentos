@@ -12,6 +12,8 @@ class User < ApplicationRecord
 
   def phone
     phone = self.phones.first
-    "(#{phone.ddd}) #{phone.number}"
+    if phone
+      "(#{phone.ddd}) #{phone.number}"
+    end
   end
 end
