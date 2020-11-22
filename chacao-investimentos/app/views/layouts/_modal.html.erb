@@ -3,7 +3,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title text-dark" id="application-fi-title">
-          Realizar aplicação em <%= name %>
+          Aplicação em <%= name %>
         </h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
@@ -11,17 +11,28 @@
       </div>
       <%= form_with url: url, method: :post, local: true do |f| %>
         <%= f.hidden_field :object_id, value: object.id %>
-        <div class="modal-body px-2">
-          <div class="mx-0 form-group row justify-content-center">
-            <%= f.label :value, 'Valor', class: 'col-sm-2 col-form-label text-dark' %>
-            <div class="col-sm-8 form-group">
-              <%= f.number_field :value, class: 'form-control', required: true %>
+        <% unless is_dt %>
+          <div class="modal-body px-2">
+            <div class="mx-0 form-group row justify-content-center">
+              <%= f.label :value, 'Valor', class: 'col-sm-2 col-form-label text-dark' %>
+              <div class="col-sm-8 form-group">
+                <%= f.number_field :value, class: 'form-control', required: true %>
+              </div>
             </div>
           </div>
-        </div>
+        <% else %>
+          <div class="modal-body px-2">
+            <div class="mx-0 form-group col">
+              <%= f.label :quantity, 'Quantidade', class: 'col-sm-2 col-form-label text-dark' %>
+              <div class="form-group">
+                <%= f.number_field :quantity, class: 'form-control', required: true %>
+              </div>
+            </div>
+          </div>
+        <% end %>
         <div class="modal-footer">
           <button type="button" class="btn btn-color" data-dismiss="modal">Fechar</button>
-          <%= f.submit "Realizar aplicação", class: "btn btn-color" %>
+          <%= f.submit "Finalizar", class: "btn btn-color" %>
         </div>
       <% end %>
     </div>

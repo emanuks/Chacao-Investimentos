@@ -1,0 +1,32 @@
+<%= form_with(model: application_if, local: true) do |form| %>
+  <% if application_if.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(application_if.errors.count, "error") %> prohibited this application_if from being saved:</h2>
+
+      <ul>
+        <% application_if.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :float %>
+    <%= form.text_field :float %>
+  </div>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.text_field :user_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :direct_treasure_id %>
+    <%= form.text_field :direct_treasure_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

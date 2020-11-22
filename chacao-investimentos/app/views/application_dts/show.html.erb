@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @application_dt.quantity %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @application_dt.user_id %>
+</p>
+
+<p>
+  <strong>Direct treasure:</strong>
+  <%= @application_dt.direct_treasure_id %>
+</p>
+
+<%= link_to 'Edit', edit_application_dt_path(@application_dt) %> |
+<%= link_to 'Back', application_dts_path %>

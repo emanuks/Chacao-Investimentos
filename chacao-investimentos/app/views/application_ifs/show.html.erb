@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Valor:</strong>
+  <%= @application_if.value %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @application_if.user_id %>
+</p>
+
+<p>
+  <strong>Direct treasure:</strong>
+  <%= @application_if.investment_fund_id %>
+</p>
+
+<%= link_to 'Edit', edit_application_if_path(@application_if) %> |
+<%= link_to 'Back', application_ifs_path %>

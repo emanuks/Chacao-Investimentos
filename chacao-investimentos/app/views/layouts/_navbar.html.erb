@@ -11,7 +11,7 @@
     <div class="navbar-nav">
       <% if current_user %>
         <%= link_to "Perfil", user_path(current_user), class: 'nav-item nav-link'%>
-        <%= link_to "Logout", logout_path, class: 'nav-item nav-link', method: :delete %>
+        <%= link_to "Logout", logout_path, class: 'nav-item nav-link' %>
       <% else %>
           <%= link_to "Login", login_path, class: 'nav-item nav-link' %>
           <%= link_to "Cadastrar", new_user_path, class: 'nav-item nav-link' %>

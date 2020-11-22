@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Application Ifs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Float</th>
+      <th>User</th>
+      <th>Direct treasure</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @application_ifs.each do |application_if| %>
+      <tr>
+        <td><%= application_if.float %></td>
+        <td><%= application_if.user_id %></td>
+        <td><%= application_if.direct_treasure_id %></td>
+        <td><%= link_to 'Show', application_if %></td>
+        <td><%= link_to 'Edit', edit_application_if_path(application_if) %></td>
+        <td><%= link_to 'Destroy', application_if, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Application If', new_application_if_path %>
