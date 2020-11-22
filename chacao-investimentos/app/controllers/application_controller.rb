@@ -12,10 +12,6 @@ class ApplicationController < ActionController::Base
     restrict_access unless current_user&.is_admin?
   end
 
-  def logged_in?
-    restrict_access unless current_user
-  end
-
   def is_user?
     not current_user.is_admin
   end
