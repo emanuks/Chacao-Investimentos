@@ -15,6 +15,8 @@ Rails.application.routes.draw do
 
   get '/products', to: 'products#index', as: :products
 
+  get '/applications', to: 'applications#index', as: :applications
+
   get '/direct_treasures/:id', to: 'direct_treasures#show', as: :show_direct_treasure
   get '/fixed_incomes/:id', to: 'fixed_incomes#show', as: :show_fixed_income
   get '/investment_funds/:id', to: 'investment_funds#show', as: :show_investment_fund

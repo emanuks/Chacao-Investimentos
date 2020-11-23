@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_20_204353) do
+ActiveRecord::Schema.define(version: 2020_11_21_234723) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -46,6 +46,16 @@ ActiveRecord::Schema.define(version: 2020_11_20_204353) do
     t.index ["user_id"], name: "index_addresses_on_user_id"
   end
 
+  create_table "application_dts", force: :cascade do |t|
+    t.integer "quantity"
+    t.bigint "user_id", null: false
+    t.bigint "direct_treasure_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["direct_treasure_id"], name: "index_application_dts_on_direct_treasure_id"
+    t.index ["user_id"], name: "index_application_dts_on_user_id"
+  end
+
   create_table "application_fis", force: :cascade do |t|
     t.bigint "user_id", null: false
     t.bigint "fixed_income_id", null: false
@@ -54,6 +64,16 @@ ActiveRecord::Schema.define(version: 2020_11_20_204353) do
     t.datetime "updated_at", precision: 6, null: false
     t.index ["fixed_income_id"], name: "index_application_fis_on_fixed_income_id"
     t.index ["user_id"], name: "index_application_fis_on_user_id"
+  end
+
+  create_table "application_ifs", force: :cascade do |t|
+    t.float "value"
+    t.bigint "user_id", null: false
+    t.bigint "investment_fund_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["investment_fund_id"], name: "index_application_ifs_on_investment_fund_id"
+    t.index ["user_id"], name: "index_application_ifs_on_user_id"
   end
 
   create_table "direct_treasures", force: :cascade do |t|
@@ -111,7 +131,11 @@ ActiveRecord::Schema.define(version: 2020_11_20_204353) do
   add_foreign_key "accounts", "account_types"
   add_foreign_key "accounts", "users"
   add_foreign_key "addresses", "users"
+  add_foreign_key "application_dts", "direct_treasures"
+  add_foreign_key "application_dts", "users"
   add_foreign_key "application_fis", "fixed_incomes"
   add_foreign_key "application_fis", "users"
+  add_foreign_key "application_ifs", "investment_funds"
+  add_foreign_key "application_ifs", "users"
   add_foreign_key "phones", "users"
 end

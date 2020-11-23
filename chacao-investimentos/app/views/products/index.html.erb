@@ -13,15 +13,20 @@
     </nav>
     <% if current_user&.is_admin %>
       <div class="pb-4 border-bottom border-dark col">
-        <h1 class="pb-3"> Produtos de Investimento </h1>
-        <div class="dropdown">
-          <button class="btn btn-color dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Adicionar Produto de Investimento
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <%= link_to "Renda Fixa", new_fixed_income_path, class: "dropdown-item" %>
-            <%= link_to "Fundo de Investimento", new_investment_fund_path, class: "dropdown-item" %>
-            <%= link_to "Tesouro Direto", new_direct_treasure_path, class: "dropdown-item" %>
+        <h1 class="pb-2"> Produtos de Investimento </h1>
+        <div class="d-flex flex-row flex-wrap justify-content-start">
+          <div class="dropdown pt-2 pr-2">
+            <button class="btn btn-color dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Adicionar Produto de Investimento
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <%= link_to "Renda Fixa", new_fixed_income_path, class: "dropdown-item" %>
+              <%= link_to "Fundo de Investimento", new_investment_fund_path, class: "dropdown-item" %>
+              <%= link_to "Tesouro Direto", new_direct_treasure_path, class: "dropdown-item" %>
+            </div>
+          </div>
+          <div class="pt-2">
+            <%= link_to "Visualizar Aplicações Realizadas", applications_path, class: "btn btn-color" %>
           </div>
         </div>
       </div>
