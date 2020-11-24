@@ -1,0 +1,26 @@
+<!-- Sidebar -->
+<nav class="d-flex flex-column align-items-center sidebar-style bg-light" id="sidebar">
+  <div class="sidebar-header">
+    <h3 class="border-bottom border-dark pb-3">Filtros</h3>
+  </div>
+  <%= form_with url: products_path, method: :get, local: true do |form| %>
+    <ul class="pt-3 list-unstyled components box-size">
+      <li>
+        <%= form.check_box :direct_treasure, {checked: !@direct_treasures.empty?} %>
+        <%= form.label :direct_treasure, "Tesouro Direto" %>
+      </li>
+      <li>
+        <%= form.check_box :investment_fund, {checked: !@investment_funds.empty?} %>
+        <%= form.label :investment_fund, "Fundo de Investimento" %>
+      </li>
+      <li>
+        <%= form.check_box :fixed_income, {checked: !@fixed_incomes.empty?} %>
+        <%= form.label :fixed_income ,"Renda Fixa" %>
+      </li>
+    </ul>
+    <div class="d-flex justify-content-center">
+      <%= form.hidden_field :filtered, value: true %>
+      <%= form.submit "Filtrar", class:"w-50 btn btn-color" %>
+    </div>
+<% end %>
+</nav>

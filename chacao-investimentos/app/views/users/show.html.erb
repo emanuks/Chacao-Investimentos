@@ -1,0 +1,53 @@
+<div class="col pb-4">
+  <h3 class="border-bottom border-dark col pb-4 pt-3"> Informações de Usuário</h3>
+  <%= link_to "Editar Perfil", edit_user_path(current_user), class: 'btn btn-color mb-2 mt-1' %>
+</div>
+<div class="pl-4 pr-4">
+  <div class="form-row">
+    <div class="form-group col">
+      <h4> Nome </h4>
+      <p> <%= @user.name %></p>
+    </div>
+    <div class="form-group col">
+      <h4> Email </h4>
+      <p> <%= @user.email %></p>
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col">
+      <h4> CPF </h4>
+      <p><%= @user.cpf %></p>
+    </div>
+    <div class="form-group col">
+      <h4> Data nascimento </h4>
+      <p><%= @user.birth_date %></p>
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col">
+      <h4> Celular </h4>
+      <p><%= @user.phone %></p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <h3> Informações de conta </h3>
+      <hr/>
+
+      <% unless @user.accounts.blank? %>
+        <%= render "accounts/show", :account => @user.accounts.first %>
+      <% end %>
+    </div>
+    <div class="col">
+      <h3> Informação de endereço </h3>
+      <hr/>
+
+      <% unless @user.addresses.blank? %>
+        <%= render "addresses/show", :address => @user.addresses.first %>
+      <% end %>
+    </div>
+  </div>
+</div>

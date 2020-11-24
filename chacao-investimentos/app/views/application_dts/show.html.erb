@@ -1,0 +1,60 @@
+
+<div class="col">
+  <h1 class="border-bottom border-dark col pb-4 pt-3">Aplicação em <%= @application_dt.direct_treasure.name %></h1>
+
+  <div class="form-row justify-content-around">
+    <div class="col pl-5 pr-5">
+      <h3 class="border-bottom border-dark col pb-4 pt-3">Informações de Usuário</h3>
+    </div>
+    <div class="col pl-5 pr-5">
+      <h3 class="border-bottom border-dark col pb-4 pt-3">Informação da Aplicação</h3>
+    </div>
+  </div>
+
+  <div class="text-size">
+    <div class="pt-5 form-row justify-content-around">
+      <div class="col-md-5 d-flex flex-column">
+        <p>Nome</p>
+        <p class="text-center text-secondary">
+          <%= @application_dt.user.name %>
+        </p>
+      </div>
+
+      <div class="col-md-5 d-flex flex-column">
+        <p>Quantidade Aplicada</p>
+        <p class="text-center text-secondary">
+          <%= @application_dt.quantity %>
+        </p>
+      </div>
+    </div>
+
+    <div class="pt-5 form-row justify-content-around">
+      <div class="col-md-5 d-flex flex-column">
+        <p>CPF</p>
+        <p class="text-center text-secondary">
+          <%= @application_dt.user.cpf %>
+        </p>
+      </div>
+      <div class="col-md-5 d-flex flex-column"></div>
+    </div>
+
+    <% if current_user&.is_admin? %>
+      <div class="form-row justify-content-center pt-5">
+        <%= link_to "Visualizar #{@application_dt.direct_treasure.name}", @application_dt.direct_treasure, class: 'btn btn-color' %>
+        <%= link_to 'Voltar', applications_path, class: "btn btn-color" %>
+      </div>
+    <% elsif current_user.id == @application_dt.user.id %>
+      <div class="form-row justify-content-center pt-5">
+        <div class="pr-1">
+          <%= link_to "Visualizar #{@application_dt.direct_treasure.name}", @application_dt.direct_treasure, class: 'btn btn-color' %>
+        </div>
+        <div class="pr-1 pl-1">
+          <%= link_to 'Cancelar Aplicação', @application_dt, method: :delete, data: {confirm: 'Você tem certeza?'}, class: "btn btn-color" %>
+        </div>
+        <div class="pl-1">
+          <%= link_to 'Voltar', applications_path, class: "btn btn-color" %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,68 @@
+<%= form_with(model: user, local: true) do |form| %>
+  <% if user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+        <% user.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-row">
+    <div class="form-group col">
+      <%= form.label 'Nome' %>
+      <%= form.text_field :name, class: 'form-control', required: true %>
+    </div>
+    <div class="form-group col">
+      <%= form.label 'E-mail' %>
+      <%= form.email_field :email, class: 'form-control', required: true %>
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col">
+      <%= form.label :cpf, 'CPF' %>
+      <%= form.text_field :cpf, {maxlength: 14 , class: 'form-control', required: true} %>
+    </div>
+    <div class="form-group col">
+      <%= form.label :birth_date, 'Data de Nascimento' %>
+      <%= form.date_field :birth_date, max: Date.today, value: Date.today, class: "form-control", required: true %>
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col">
+      <%= form.label 'Senha' %>
+      <%= form.password_field :password, class: 'form-control', required: true %>
+    </div>
+    <div class="form-group col">
+      <%= form.fields_for :phones do |builder| %>
+        <%= render "phones/fields", :f => builder %>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <h3> Informações de conta </h3>
+      <hr/>
+
+      <%= form.fields_for :accounts do |builder| %>
+        <%= render "accounts/fields", :f => builder %>
+      <% end %>
+    </div>
+    <div class="col">
+      <h3> Informação de endereço </h3>
+      <hr/>
+
+      <%= form.fields_for :addresses do |builder| %>
+        <%= render "addresses/fields", :f => builder %>
+      <% end %>
+    </div>
+  </div>
+
+
+<% end %>

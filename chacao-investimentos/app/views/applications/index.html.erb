@@ -1,0 +1,65 @@
+<div class="col pb-4">
+  <h1 class="border-bottom border-dark col pb-4 pt-3"> Painel de Gerenciamento</h1>
+</div>
+
+<div class="shadow-sm content-box">
+  <div class="content-box-header">
+    <h3 class="content-box-title">
+      Aplicações em Produtos de Investimento
+    </h3>
+  </div>
+
+  <div class="content-box-table table-responsive text-center">
+    <table class="table">
+      <thead>
+      <tr>
+        <% if @application_dts.empty? and @application_ifs.empty? and @application_fis.empty? %>
+          <th scope="col">Não existem produtos cadastrados!</th>
+        <% else %>
+          <% if current_user.is_admin? %>
+            <th scope="col">Usuário</th>
+          <% end %>
+          <th scope="col">Produto</th>
+          <th scope="col"></th>
+
+        <% end %>
+      </tr>
+      </thead>
+      <tbody>
+      <% @application_dts&.each do |application| %>
+        <tr>
+          <% if current_user.is_admin? %>
+            <td><%= application.user.email %></td>
+          <% end %>
+          <td><%= application.direct_treasure.name %></td>
+          <td><%= link_to "Visualizar", application, class: "btn btn-color" %></td>
+        </tr>
+      <% end %>
+
+      <% @application_ifs&.each do |application| %>
+        <tr>
+          <% if current_user.is_admin? %>
+            <td><%= application.user.email %></td>
+          <% end %>
+          <td><%= application.investment_fund.name %></td>
+          <td><%= link_to "Visualizar", application, class: "btn btn-color" %></td>
+        </tr>
+      <% end %>
+
+      <% @application_fis&.each do |application| %>
+        <tr>
+          <% if current_user.is_admin? %>
+            <td><%= application.user.email %></td>
+          <% end %>
+          <td><%= application.fixed_income.entity %></td>
+          <td><%= link_to "Visualizar", application, class: "btn btn-color" %></td>
+        </tr>
+      <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="d-flex justify-content-center">
+  <%= link_to "Voltar", products_path, class: "btn btn-color mt-2" %>
+</div>
