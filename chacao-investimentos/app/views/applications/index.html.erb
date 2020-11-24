@@ -13,35 +13,43 @@
     <table class="table">
       <thead>
       <tr>
-        <th scope="col">Usuário</th>
+        <% if current_user.is_admin? %>
+          <th scope="col">Usuário</th>
+        <% end %>
         <th scope="col">Produto</th>
         <th scope="col"></th>
       </tr>
       </thead>
       <tbody>
-        <% @application_dts&.each do |application| %>
+      <% @application_dts&.each do |application| %>
         <tr>
-          <td><%= application.user.email %></td>
+          <% if current_user.is_admin? %>
+            <td><%= application.user.email %></td>
+          <% end %>
           <td><%= application.direct_treasure.name %></td>
           <td><%= link_to "Visualizar", application, class: "btn btn-color" %></td>
         </tr>
-        <% end %>
+      <% end %>
 
-        <% @application_ifs&.each do |application| %>
+      <% @application_ifs&.each do |application| %>
         <tr>
-          <td><%= application.user.email %></td>
+          <% if current_user.is_admin? %>
+            <td><%= application.user.email %></td>
+          <% end %>
           <td><%= application.investment_fund.name %></td>
           <td><%= link_to "Visualizar", application, class: "btn btn-color" %></td>
         </tr>
-        <% end %>
+      <% end %>
 
-        <% @application_fis&.each do |application| %>
+      <% @application_fis&.each do |application| %>
         <tr>
-          <td><%= application.user.email %></td>
+          <% if current_user.is_admin? %>
+            <td><%= application.user.email %></td>
+          <% end %>
           <td><%= application.fixed_income.entity %></td>
           <td><%= link_to "Visualizar", application, class: "btn btn-color" %></td>
         </tr>
-        <% end %>
+      <% end %>
       </tbody>
     </table>
   </div>
