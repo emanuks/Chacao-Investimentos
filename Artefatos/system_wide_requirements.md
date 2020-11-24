@@ -21,7 +21,7 @@ ____
 #### Confiabilidade
 - Disponibilidade: O sistema deve ser implementado e monitorado de maneira a garantir que não ocorram mais de 7 falhas por semana.
 
-- Capacidade de Recuperação: O sistema não deve ficar fora do ar por mais de 7h por semana.
+- Capacidade de Recuperação: O sistema não deve ficar fora do ar por mais de 7 horas por semana.
 
 #### Desempenho
 - Tempos de resposta: O tempo máximo de resposta deve ser de 2 segundos.
