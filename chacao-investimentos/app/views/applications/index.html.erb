@@ -13,11 +13,16 @@
     <table class="table">
       <thead>
       <tr>
-        <% if current_user.is_admin? %>
-          <th scope="col">Usuário</th>
+        <% if @application_dts.empty? and @application_ifs.empty? and @application_fis.empty? %>
+          <th scope="col">Não existem produtos cadastrados!</th>
+        <% else %>
+          <% if current_user.is_admin? %>
+            <th scope="col">Usuário</th>
+          <% end %>
+          <th scope="col">Produto</th>
+          <th scope="col"></th>
+
         <% end %>
-        <th scope="col">Produto</th>
-        <th scope="col"></th>
       </tr>
       </thead>
       <tbody>
