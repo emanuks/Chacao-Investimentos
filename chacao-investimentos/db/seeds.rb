@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 AccountType.create(name: 'Conta Corrente')
-User.create(cpf: '92482292042', email: 'admin@admin.com', password: '1234')
+User.create(cpf: '92482292042', email: 'admin@admin.com', password: '1234', is_admin: true)
 
 # Renda Fixa
 FixedIncome.create(category: "CDB", entity: "Daycoval Digital", due_date: 24, tax: 0.01, time_limit: "20:00", value: 75)

@@ -11,7 +11,7 @@
     </div>
   <% end %>
   <div class="text-size">
-    <div class="padding-header form-row justify-content-around">
+    <div class="pt-5 form-row justify-content-around">
       <div class="form-group col-md-5">
         <%= form.label :entity, "Nome da Entidade Emissora" %>
         <%= form.text_field :entity, class: "form-control" %>
@@ -43,7 +43,7 @@
 
       <div class="form-group col-md-5">
         <%= form.label :time_limit, "Horário limite" %>
-        <%= form.time_select :time_limit, class: "form-control" %>
+        <%= form.time_field :time_limit, class: "form-control" %>
       </div>
 
     </div>
