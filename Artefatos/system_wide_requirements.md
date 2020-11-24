@@ -11,7 +11,7 @@ ____
 #### Funcionalidade
 - Autenticação: Os usuários não autenticados podem visualizar produtos ou criar uma conta no sistema, porém para realizar aplicações é necessário estar autenticado informando CPF e Senha utilizados no cadastro.
 
-- Segurança: Os dados de usuário e conta bancária não deverão ser acessíveis por outro usuário que não for o usuário vinculado às informações ou administrador.
+- Segurança: Os dados de usuário e conta bancária não deverão ser acessíveis por outro usuário que não for o usuário vinculado às informações ou administrador. O campo de senha deverá ser criptografado e não deve ser acessível para o administrador.
 
 #### Usabilidade
 - Facilidade de aprendizado: O sistema deve ser intuitivo de maneira a facilitar a utilização do sistema a qualquer tipo de usuário.
