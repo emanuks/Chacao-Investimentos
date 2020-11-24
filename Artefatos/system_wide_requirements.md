@@ -29,7 +29,7 @@ ____
 - Capacidade: O sistema deve ser capaz de operar com 500 usuários simultâneos.
 
 #### Suporte
-- Adaptabilidade: O sistema deve se adaptar e incorporar novos tipos de aplicação financeira.
+- Adaptabilidade: O sistema deve se adaptar e incorporar novos tipos de aplicações financeiras.
 
 - Escalabilidade: O sistema deve ser projetado e implementado visando escalabilidade, isto é, os componentes e tecnologias devem visar o crescimento do sistema.
 
