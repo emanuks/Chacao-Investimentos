@@ -3,9 +3,9 @@
 
 ____
 
-- Emanuel Silva de Medeiros
-- Pedro Augusto Ramalho Duarte
-- Waliff Cordeiro Bandeira
+- Emanuel Silva de Medeiros (17/0009360)
+- Pedro Augusto Ramalho Duarte (17/0163717)
+- Waliff Cordeiro Bandeira (17/0115810)
 
 ____
 #### Introdução
