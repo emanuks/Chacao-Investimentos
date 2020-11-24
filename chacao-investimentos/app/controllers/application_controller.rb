@@ -9,19 +9,24 @@ class ApplicationController < ActionController::Base
   end
 
   def require_your_self
-    if params[:controller] == "users"
-      restrict_access unless current_user.id == params[:id].to_i
-    elsif params[:controller] == "application_fis"
-      application = ApplicationFi.find(params[:id])
-    elsif params[:controller] == "application_ifs"
-      application = ApplicationIf.find(params[:id])
-    elsif params[:controller] == "application_dts"
-      application = ApplicationDt.find(params[:id])
-    end
-    unless current_user.id == application&.user.id
-      restrict_access
-    end
+    restrict_access unless current_user.id == params[:id].to_i
   end
+
+  def require_your_self_dt
+    application = ApplicationDt.find(params[:id])
+    restrict_access unless current_user.id == application.user.id
+  end
+
+  def require_your_self_if
+    application = ApplicationIf.find(params[:id])
+    restrict_access unless current_user.id == application.user.id
+  end
+
+  def require_your_self_fi
+    application = ApplicationFi.find(params[:id])
+    restrict_access unless current_user.id == application.user.id
+  end
+
 
   def is_admin?
     current_user.is_admin

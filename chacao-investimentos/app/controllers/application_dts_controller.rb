@@ -1,7 +1,7 @@
 class ApplicationDtsController < ApplicationController
   before_action :set_application_dt, only: [:show, :edit, :update, :destroy]
   before_action :require_user, only: [:new, :create]
-  before_action :require_your_self, only: [:destroy]
+  before_action :require_your_self_dt, only: [:destroy]
   before_action :require_login, only: [:show]
   # GET /application_dts
   # GET /application_dts.json

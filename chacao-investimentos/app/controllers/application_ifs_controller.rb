@@ -1,7 +1,7 @@
 class ApplicationIfsController < ApplicationController
   before_action :set_application_if, only: [:show, :edit, :update, :destroy]
   before_action :require_user, only: [:new, :create]
-  before_action :require_your_self, only: [:destroy]
+  before_action :require_your_self_if, only: [:destroy]
   before_action :require_login, only: [:show]
 
   # GET /application_ifs

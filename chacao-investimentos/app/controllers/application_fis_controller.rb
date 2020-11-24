@@ -1,7 +1,7 @@
 class ApplicationFisController < ApplicationController
   before_action :set_application_fi, only: [:show, :edit, :update, :destroy]
   before_action :require_user, only: [:new, :create]
-  before_action :require_your_self, only: [:destroy]
+  before_action :require_your_self_fi, only: [:destroy]
   before_action :require_login, only: [:show]
 
   # GET /application_fis
