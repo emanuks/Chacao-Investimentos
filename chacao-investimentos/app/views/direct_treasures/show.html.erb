@@ -46,7 +46,7 @@
     </div>
   </div>
 
-  <% if current_user&.is_admin %>
+  <% if current_user&.is_admin? %>
     <div class="form-row justify-content-center pt-5">
       <div class="pr-1">
         <%= link_to 'Excluir', @direct_treasure, class: "btn btn-color", method: :delete, data: {confirm: 'Are you sure?'} %>

@@ -8,6 +8,10 @@ class ApplicationController < ActionController::Base
     end
   end
 
+  def is_admin?
+    current_user.is_admin
+  end
+
   def require_admin
     restrict_access unless current_user&.is_admin?
   end

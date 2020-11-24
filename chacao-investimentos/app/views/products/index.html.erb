@@ -11,7 +11,7 @@
         </button>
       </div>
     </nav>
-    <% if current_user&.is_admin %>
+    <% if current_user&.is_admin? %>
       <div class="pb-4 border-bottom border-dark col">
         <h1 class="pb-2"> Produtos de Investimento </h1>
         <div class="d-flex flex-row flex-wrap justify-content-start">
