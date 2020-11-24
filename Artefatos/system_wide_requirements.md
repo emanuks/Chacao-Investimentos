@@ -34,7 +34,7 @@ ____
 - Escalabilidade: O sistema deve ser projetado e implementado visando escalabilidade, isto é, os componentes e tecnologias devem visar o crescimento do sistema.
 
 #### Restrições
-- Linguagem de Programação: O sistema deve ser implementado em Ruby on Rails.
+- Linguagem de Programação: O sistema deve ser implementado na linguagem Ruby através do framework Ruby on Rails.
 
 - Suporte à Plataforma: O sistema deve sempre estar disponível nos 3 navegadores mais utilizados do mundo.
 
