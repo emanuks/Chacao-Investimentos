@@ -13,7 +13,7 @@
   flex-direction: column;
   height: 34rem;
   align-content: center;
-  margin: 2.5% 5%;
+  margin: 0.7% 5%;
   background-color: #E0E3F6;
   border-radius: 10px;
   font-weight: 500;
@@ -24,9 +24,12 @@
   justify-content: center;
   align-items: center;
   background-color: #686DA1;
-  height: 180px !important;
+  height: 60px !important;
   border-radius: 10px;
   border-bottom: 2px solid rgba(0,0,0,0.125);
+  @media (max-height: 820px) {
+    height: 180px !important;
+  }
 }
 
 .content-box-title {
