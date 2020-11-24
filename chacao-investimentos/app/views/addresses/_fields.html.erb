@@ -1,30 +1,30 @@
 <div class="form-row">
   <div class="form-group col">
-    <%= f.label 'Cep' %>
-    <%= f.text_field :cep, class: 'form-control'  %>
+    <%= f.label :cep, 'CEP' %>
+    <%= f.text_field :cep, {maxlength: 10, class: 'form-control', required: true}  %>
   </div>
   <div class="form-group col">
     <%= f.label 'Estado' %>
-    <%= f.text_field :state, class: 'form-control'  %>
+    <%= f.text_field :state, class: 'form-control', required: true  %>
   </div>
 </div>
 <div class="form-row">
   <div class="form-group col">
     <%= f.label 'Cidade' %>
-    <%= f.text_field :city, class: 'form-control'  %>
+    <%= f.text_field :city, class: 'form-control', required: true  %>
   </div>
   <div class="form-group col">
     <%= f.label 'Bairro' %>
-    <%= f.text_field :neighbordhood, class: 'form-control'  %>
+    <%= f.text_field :neighbordhood, class: 'form-control', required: true  %>
   </div>
 </div>
 <div class="form-row">
   <div class="form-group col">
     <%= f.label 'Logradouro' %>
-    <%= f.text_field :complement, class: 'form-control'  %>
+    <%= f.text_field :complement, class: 'form-control', required: true  %>
   </div>
   <div class="form-group col">
     <%= f.label 'Número' %>
-    <%= f.number_field :number, class: 'form-control'  %>
+    <%= f.number_field :number, {min: 0, class: 'form-control', required: true}  %>
   </div>
 </div>
