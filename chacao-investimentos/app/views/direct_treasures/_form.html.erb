@@ -14,30 +14,30 @@
     <div class="padding-header form-row justify-content-around">
       <div class="form-group col-md-5">
         <%= form.label :name, "Nome" %>
-        <%= form.text_field :name, class: "form-control" %>
+        <%= form.text_field :name, class: "form-control", required: true %>
       </div>
       <div class="form-group col-md-5">
         <%= form.label :index, "Indexador" %>
-        <%= form.select :index, options_for_select(["IPCA","SELIC","Prefixado"]), {}, class: "form-control" %>
+        <%= form.select :index, options_for_select(["IPCA","SELIC","Prefixado"]), {}, class: "form-control", required: true %>
       </div>
     </div>
 
     <div class="pt-5 form-row justify-content-around">
       <div class="form-group col-md-5">
         <%= form.label :tax, "Taxa" %>
-        <%= form.text_field :tax, class: "form-control" %>
+        <%= form.number_field :tax, {min: 0, step: 0.01, class: "form-control", required: true} %>
       </div>
 
       <div class="form-group col-md-5">
         <%= form.label :value, "Preço Unitário" %>
-        <%= form.text_field :value, class: "form-control" %>
+        <%= form.number_field :value, {min: 0, step: 0.01, class: "form-control", required: true} %>
       </div>
     </div>
     
     <div class="d-flex justify-content-center">
       <div class="due-date form-group pt-5 text-center">
         <%= form.label :due_date, "Data de Vencimento" %>
-        <%= form.date_field :due_date, min: Date.today, value: Date.today, class: "form-control text-center" %>
+        <%= form.date_field :due_date, min: Date.today, value: Date.today, class: "form-control text-center", required: true %>
       </div>
     </div>
 
