@@ -6,7 +6,7 @@ class UserSessionsController < ApplicationController
   def create
     if login(params[:username], params[:password])
       flash[:success] = 'Seja muito bem-vindo(a)!'
-      redirect_to root_path
+      redirect_to products_path
     else
       flash.now[:warning] = 'Dados inválidos! Tente novamente!'
       render 'new'
