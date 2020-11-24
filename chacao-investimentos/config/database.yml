@@ -80,6 +80,4 @@ test:
 #
 production:
   <<: *default
-  database: chacao_investimentos_production
-  username: chacao_investimentos
-  password: <%= ENV['CHACAO_INVESTIMENTOS_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
