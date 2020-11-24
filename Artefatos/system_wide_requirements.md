@@ -14,7 +14,7 @@ ____
 - Segurança: Os dados de usuário e conta bancária não deverão ser acessíveis por outro usuário que não for o usuário vinculado às informações ou administrador.
 
 #### Usabilidade
-- Facilidade de aprendizado: O sistema deve ser intuitivo de maneira a facilitar a utilização do sistema a qualquer tipo de usuário.
+- Facilidade de aprendizado: O sistema deve ser intuitivo de maneira a facilitar a utilização para qualquer tipo de usuário.
 
 - Compreensão: O sistema deve ser intuitivo e visualmente simples de maneira a garantir que o usuário entenda os avisos e mensagens disponibilizados pelo sistema.
 
