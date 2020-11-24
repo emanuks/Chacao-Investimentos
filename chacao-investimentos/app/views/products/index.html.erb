@@ -32,9 +32,11 @@
     <% else %>
       <div class="border-bottom border-dark col">
         <h1 class="pb-3"> Produtos de Investimento </h1>
-        <div class="d-flex flex-row flex-wrap justify-content-start">
-          <%= link_to "Minhas Aplicações", applications_path, class: "btn btn-color mb-3" %>
-        </div>
+        <% if current_user %>
+          <div class="d-flex flex-row flex-wrap justify-content-start">
+            <%= link_to "Minhas Aplicações", applications_path, class: "btn btn-color mb-3" %>
+          </div>
+        <% end %>
       </div>
     <% end %>
 
