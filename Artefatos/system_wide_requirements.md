@@ -14,14 +14,14 @@ ____
 - Segurança: Os dados de usuário e conta bancária não deverão ser acessíveis por outro usuário que não for o usuário vinculado às informações ou administrador. O campo de senha deverá ser criptografado e não deve ser acessível para o administrador.
 
 #### Usabilidade
-- Facilidade de aprendizado: O sistema deve ser intuitivo de maneira a facilitar a utilização do sistema a qualquer tipo de usuário.
+- Facilidade de aprendizado: O sistema deve ser intuitivo de maneira a facilitar a utilização para qualquer tipo de usuário.
 
 - Compreensão: O sistema deve ser intuitivo e visualmente simples de maneira a garantir que o usuário entenda os avisos e mensagens disponibilizados pelo sistema.
 
 #### Confiabilidade
 - Disponibilidade: O sistema deve ser implementado e monitorado de maneira a garantir que não ocorram mais de 7 falhas por semana.
 
-- Capacidade de Recuperação: O sistema não deve ficar fora do ar por mais de 7h por semana.
+- Capacidade de Recuperação: O sistema não deve ficar fora do ar por mais de 7 horas por semana.
 
 #### Desempenho
 - Tempos de resposta: O tempo máximo de resposta deve ser de 2 segundos.
@@ -29,7 +29,7 @@ ____
 - Capacidade: O sistema deve ser capaz de operar com 500 usuários simultâneos.
 
 #### Suporte
-- Adaptabilidade: O sistema deve se adaptar e incorporar novos tipos de aplicação financeira.
+- Adaptabilidade: O sistema deve se adaptar e incorporar novos tipos de aplicações financeiras.
 
 - Escalabilidade: O sistema deve ser projetado e implementado visando escalabilidade, isto é, os componentes e tecnologias devem visar o crescimento do sistema.
 
