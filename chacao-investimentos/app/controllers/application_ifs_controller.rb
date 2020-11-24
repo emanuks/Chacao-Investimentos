@@ -60,7 +60,7 @@ class ApplicationIfsController < ApplicationController
   def destroy
     @application_if.destroy
     respond_to do |format|
-      format.html { redirect_to application_ifs_url, notice: 'Application if was successfully destroyed.' }
+      format.html { redirect_to applications_path, notice: 'Application if was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

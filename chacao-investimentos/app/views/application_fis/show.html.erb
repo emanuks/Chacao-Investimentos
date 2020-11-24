@@ -1,19 +1,60 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>User:</strong>
-  <%= @application_fi.user_id %>
-</p>
+<div class="col">
+  <h1 class="border-bottom border-dark col pb-4 pt-3">Aplicação em <%= @application_fi.fixed_income.entity %></h1>
 
-<p>
-  <strong>Fixe income:</strong>
-  <%= @application_fi.fixed_income_id %>
-</p>
+  <div class="form-row justify-content-around">
+    <div class="col pl-5 pr-5">
+      <h3 class="border-bottom border-dark col pb-4 pt-3">Informações de Usuário</h3>
+    </div>
+    <div class="col pl-5 pr-5">
+      <h3 class="border-bottom border-dark col pb-4 pt-3">Informação da Aplicação</h3>
+    </div>
+  </div>
 
-<p>
-  <strong>Value:</strong>
-  <%= @application_fi.value %>
-</p>
+  <div class="text-size">
+    <div class="pt-5 form-row justify-content-around">
+      <div class="col-md-5 d-flex flex-column">
+        <p>Nome</p>
+        <p class="text-center text-secondary">
+          <%= @application_fi.user.name %>
+        </p>
+      </div>
 
-<%= link_to 'Edit', edit_application_fi_path(@application_fi) %> |
-<%= link_to 'Back', application_fis_path %>
+      <div class="col-md-5 d-flex flex-column">
+        <p>Valor Aplicado</p>
+        <p class="text-center text-secondary">
+          <%= @application_fi.value %>
+        </p>
+      </div>
+    </div>
+
+    <div class="pt-5 form-row justify-content-around">
+      <div class="col-md-5 d-flex flex-column">
+        <p>CPF</p>
+        <p class="text-center text-secondary">
+          <%= @application_fi.user.cpf %>
+        </p>
+      </div>
+
+      <div class="col-md-5 d-flex flex-column align-items-end justify-content-center">
+        <%= link_to "Visualizar #{@application_fi.fixed_income.entity}", @application_fi.fixed_income, class: 'btn btn-color w-50' %>
+      </div>
+    </div>
+
+    <% if current_user&.is_admin %>
+      <div class="form-row justify-content-center pt-5">
+        <%= link_to 'Voltar', applications_path, class: "btn btn-color" %>
+      </div>
+    <% elsif current_user.id == @application_fi.user.id %>
+      <div class="form-row justify-content-center pt-5">
+        <div class="pr-1">
+          <%= link_to 'Cancelar Aplicação', @application_fi, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-color" %>
+        </div>
+        <div class="pl-1">
+          <%= link_to 'Voltar', applications_path, class: "btn btn-color" %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
