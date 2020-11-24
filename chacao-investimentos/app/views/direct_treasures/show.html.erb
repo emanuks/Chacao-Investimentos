@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
-<div class="border-bottom border-dark col">
-  <h1 class="pb-3">Tesouro Direto</h1>
+<div class="col pb-4">
+  <h1 class="border-bottom border-dark col pb-4 pt-3"> Tesouro Direto</h1>
 </div>
 
 <div class="text-size">
@@ -41,7 +41,7 @@
     <div class="due-date pt-5 text-center">
       <p>Data de Vencimento</p>
       <p class="text-center text-secondary">
-        <%= @direct_treasure.due_date %>
+        <%= @direct_treasure.due_date.strftime("%d/%m/%Y") %>
       </p>
     </div>
   </div>
@@ -49,7 +49,7 @@
   <% if current_user&.is_admin? %>
     <div class="form-row justify-content-center pt-5">
       <div class="pr-1">
-        <%= link_to 'Excluir', @direct_treasure, class: "btn btn-color", method: :delete, data: {confirm: 'Are you sure?'} %>
+        <%= link_to 'Excluir', @direct_treasure, class: "btn btn-color", method: :delete, data: {confirm: 'Você tem certeza?'} %>
       </div>
       <div class="pl-1">
         <%= link_to 'Voltar', products_path, class: "btn btn-color" %>

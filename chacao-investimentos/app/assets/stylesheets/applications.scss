@@ -2,6 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
+.right {
+  position: fixed !important;
+  right: 0 !important;
+  padding-right: 30px;
+}
+
 .content-box {
   display: flex;
   flex-direction: column;

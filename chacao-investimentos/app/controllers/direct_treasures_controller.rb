@@ -57,7 +57,7 @@ class DirectTreasuresController < ApplicationController
   def destroy
     @direct_treasure.destroy
     respond_to do |format|
-      format.html { redirect_to direct_treasures_url, notice: 'Direct treasure was successfully destroyed.' }
+      format.html { redirect_to products_path, notice: 'Direct treasure was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

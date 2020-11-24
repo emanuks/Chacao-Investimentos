@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
-  resources :application_dts
-  resources :application_ifs
-  resources :application_fis
-  resources :fixed_incomes
-  resources :investment_funds
-  resources :direct_treasures
+  resources :application_dts, only: [:create, :show, :new,:destroy]
+  resources :application_ifs, only: [:create, :show, :new,:destroy]
+  resources :application_fis, only: [:create, :show, :new,:destroy]
+  resources :fixed_incomes, only: [:create, :show, :new,:destroy]
+  resources :investment_funds, only: [:create, :show, :new,:destroy]
+  resources :direct_treasures, only: [:create, :show, :new,:destroy]
   root 'application#landing'
 
   resources :users
