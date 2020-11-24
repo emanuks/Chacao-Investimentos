@@ -32,7 +32,7 @@
     <div class="col-md-5 d-flex flex-column">
       <p>Preço Unitário</p>
       <p class="text-center text-secondary">
-        <%= "R$ #{@direct_treasure.value}" %>
+        <%= number_to_currency(@direct_treasure.value, :unit => "R$ ", :separator => ",", :delimiter => ".") %>
       </p>
     </div>
   </div>

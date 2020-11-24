@@ -41,7 +41,7 @@
     <div class="col-md-5 d-flex flex-column">
       <p>Valor Mínimo</p>
       <p class="text-center text-secondary">
-        <%= "R$ #{@fixed_income.value}" %>
+        <%= number_to_currency(@fixed_income.value, :unit => "R$ ", :separator => ",", :delimiter => ".") %>
       </p>
     </div>
 
